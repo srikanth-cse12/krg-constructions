@@ -1,0 +1,77 @@
+### Compiled Java & Build Artifacts ###
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.original
+*.zip
+*.tar.gz
+*.rar
+
+### Maven ###
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+### Logs & Temporary Files ###
+logs/
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+
+### OS Generated Files ###
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+ehthumbs.db
+
+### IDE & Editor Files ###
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Visual Studio Code
+.vscode/
+
+# Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+
+### Local Environment & Secrets ###
+.env
+*.env
+*.local
+local.properties
+application-local.properties
+application-local.yml
+*.key
+*.pem
+*.p12
+*.jks
+*.keystore
+secrets/
+

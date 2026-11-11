@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 64" width="360" height="64" fill="none">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800;900&amp;display=swap');
+      .brand-title-svg-white {
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-size: 21px;
+        font-weight: 800;
+        fill: #FFFFFF;
+        letter-spacing: -0.4px;
+      }
+      .brand-subtitle-svg-white {
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-size: 9px;
+        font-weight: 700;
+        fill: #F06A38;
+        letter-spacing: 1.2px;
+      }
+      .monogram-svg-white {
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-size: 19px;
+        font-weight: 900;
+        fill: #D9531E;
+        letter-spacing: 0.5px;
+      }
+    </style>
+    <linearGradient id="badgeGradWhite" x1="0" y1="0" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#18191B"/>
+      <stop offset="100%" stop-color="#2A2C31"/>
+    </linearGradient>
+    <filter id="badgeShadowWhite" x="-2" y="1" width="60" height="62" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  
+  <!-- Emblem Badge -->
+  <g filter="url(#badgeShadowWhite)">
+    <rect x="2" y="4" width="56" height="56" rx="8" fill="url(#badgeGradWhite)" stroke="#595B61" stroke-width="1.2"/>
+    <!-- Solid Brick Motif Accent Bar -->
+    <rect x="7" y="52" width="46" height="3.5" rx="1.75" fill="#D9531E"/>
+    <!-- KRG Monogram Text -->
+    <text x="30" y="38" class="monogram-svg-white" text-anchor="middle">KRG</text>
+  </g>
+
+  <!-- Complete Brand Name Typography in Bright White -->
+  <text x="70" y="34" class="brand-title-svg-white">KRG CONSTRUCTIONS</text>
+  <text x="70" y="50" class="brand-subtitle-svg-white">SINCE 2010 &#8226; MADAGONDAPALLI</text>
+</svg>

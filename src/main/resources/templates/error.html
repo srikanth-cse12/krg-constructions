@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#18191B">
+    <title th:text="${statusCode != null ? statusCode + ' - ' + errorTitle : 'Error - KRG CONSTRUCTIONS'}">Error - KRG CONSTRUCTIONS</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-warm: #FAF9F6;
+            --text-heading: #121314;
+            --text-muted: #595B61;
+            --orange-primary: #D9531E;
+            --orange-hover: #BF4314;
+            --orange-subtle: #FFF3EB;
+            --orange-border: #FCD8C5;
+            --border-light: #E7E4DC;
+            --stone-dark: #24262B;
+            --whatsapp-green: #25D366;
+            --whatsapp-hover: #1EBE5D;
+            --radius-md: 10px;
+            --radius-lg: 16px;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-warm);
+            color: var(--text-heading);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .header-logo {
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .header-logo img {
+            height: 48px;
+            width: auto;
+            max-width: 100%;
+        }
+
+        .error-card {
+            background: #FFFFFF;
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-lg);
+            padding: 3rem 2rem;
+            max-width: 580px;
+            width: 100%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            margin: auto;
+        }
+
+        .error-badge {
+            display: inline-block;
+            font-size: 0.95rem;
+            font-weight: 800;
+            padding: 0.4rem 1.1rem;
+            border-radius: 9999px;
+            background: var(--orange-subtle);
+            color: var(--orange-primary);
+            border: 1px solid var(--orange-border);
+            margin-bottom: 1.25rem;
+        }
+
+        .status-code {
+            font-size: 5rem;
+            font-weight: 800;
+            line-height: 1;
+            color: var(--text-heading);
+            letter-spacing: -0.04em;
+            margin-bottom: 0.75rem;
+        }
+
+        .error-title {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--text-heading);
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .error-desc {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 2.25rem;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.85rem;
+            justify-content: center;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.85rem 1.6rem;
+            font-size: 0.95rem;
+            font-weight: 700;
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: var(--orange-primary);
+            color: #FFFFFF;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--orange-hover);
+            transform: translateY(-1px);
+        }
+
+        .btn-whatsapp {
+            background-color: var(--whatsapp-green);
+            color: #FFFFFF;
+            border: none;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: var(--whatsapp-hover);
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-heading);
+            border: 1px solid var(--border-light);
+        }
+
+        .btn-secondary:hover {
+            background: #F4F3EE;
+        }
+
+        .error-footer {
+            margin-top: 2rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="header-logo">
+        <a href="/">
+            <img src="/images/krg-logo.svg" alt="KRG CONSTRUCTIONS" width="360" height="64">
+        </a>
+    </div>
+
+    <main class="error-card">
+        <div class="error-badge">KRG CONSTRUCTIONS</div>
+        <div class="status-code" th:text="${statusCode != null ? statusCode : 500}">404</div>
+        <h1 class="error-title" th:text="${errorTitle != null ? errorTitle : 'Page Not Found'}">Page Not Found</h1>
+        <p class="error-desc" th:text="${errorMessage != null ? errorMessage : 'The requested resource could not be found on this server.'}">
+            The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
+        </p>
+        <div class="btn-group">
+            <a href="/" class="btn btn-primary">
+                &larr; Back to Home
+            </a>
+            <a href="https://wa.me/918122895259?text=Hello%20KRG%20CONSTRUCTIONS%2C%20I%20need%20assistance" target="_blank" rel="noopener" class="btn btn-whatsapp">
+                WhatsApp Support
+            </a>
+            <a href="tel:9787267811" class="btn btn-secondary">
+                Call +91 97872 67811
+            </a>
+        </div>
+    </main>
+
+    <footer class="error-footer">
+        &copy; 2026 KRG CONSTRUCTIONS &bull; Madagondapalli, Tamil Nadu &bull; Solid Cement Bricks &amp; Materials
+    </footer>
+</body>
+</html>
+

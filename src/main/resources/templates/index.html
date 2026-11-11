@@ -1,0 +1,3785 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+    <meta name="theme-color" content="#18191B">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!-- SEO Primary Metadata -->
+    <title th:text="${title}">KRG CONSTRUCTIONS | Solid Cement Bricks &amp; Construction Materials Madagondapalli</title>
+    <meta name="description" content="Family-owned manufacturer of high-density 4-inch &amp; 6-inch solid cement bricks and bulk construction materials supplier in Madagondapalli, Tamil Nadu. Reliable local site delivery within 30–35 km.">
+    <meta name="keywords" content="cement bricks, solid cement bricks, 4-inch cement bricks, 6-inch cement bricks, M-Sand, P-Sand, plastering sand, concrete sand, stone dust, quarry dust, 20mm jelly, 40mm jelly, blue metal, cement bags, Madagondapalli construction materials, Tamil Nadu building materials, KRG CONSTRUCTIONS">
+    <meta name="author" content="KRG CONSTRUCTIONS">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" th:href="${baseUrl} + '/'">
+
+    <!-- Open Graph Social Metadata (WhatsApp, Facebook, LinkedIn) -->
+    <meta property="og:type" content="business.business">
+    <meta property="og:site_name" content="KRG CONSTRUCTIONS">
+    <meta property="og:title" content="KRG CONSTRUCTIONS | Solid Cement Bricks &amp; Construction Materials">
+    <meta property="og:description" content="Family-owned manufacturer of dense 4-inch &amp; 6-inch solid cement bricks and construction materials supplier in Madagondapalli, Tamil Nadu. Local delivery coverage approx. 30–35 km.">
+    <meta property="og:url" th:content="${baseUrl} + '/'">
+    <meta property="og:image" th:content="${baseUrl} + ${heroImage}">
+    <meta property="og:image:alt" content="Worker operating semi-automatic hydraulic pressing machine compressing cement mixture into solid rectangular bricks">
+    <meta property="og:locale" content="en_IN">
+
+    <!-- Twitter Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="KRG CONSTRUCTIONS | Solid Cement Bricks &amp; Construction Materials">
+    <meta name="twitter:description" content="Manufacturer of solid cement bricks and supplier of M-Sand, P-Sand, cement, and blue metal jelly in Madagondapalli, Tamil Nadu.">
+    <meta name="twitter:image" th:content="${baseUrl} + ${heroImage}">
+
+    <!-- Schema.org LocalBusiness Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "KRG CONSTRUCTIONS",
+      "legalName": "KRG CONSTRUCTIONS",
+      "foundingDate": "2010",
+      "description": "Family-owned manufacturer of high-density 4-inch & 6-inch solid cement bricks and supplier of M-Sand, P-Sand, quarry dust, cement, and blue metal jelly in Madagondapalli, Tamil Nadu.",
+      "image": "/images/hero-cement-brick-machine.jpg",
+      "telephone": "+919787267811",
+      "url": "/",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "JP4V+335",
+        "addressLocality": "Madagondapalli",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "635114",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 12.605139,
+        "longitude": 77.742722
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
+      ],
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 12.605139,
+          "longitude": 77.742722
+        },
+        "geoRadius": "35000"
+      },
+      "priceRange": "₹₹",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Construction Materials Catalog",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "4-inch Solid Cement Bricks",
+              "description": "High-density solid cement bricks manufactured under controlled hydraulic pressure. 100% solid dense body with no holes or cavities."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "6-inch Solid Cement Bricks",
+              "description": "Heavy-duty load-bearing solid cement bricks manufactured with table vibration and hydraulic compaction. 100% solid dense body."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "P-Sand",
+              "description": "Triple-washed plastering sand for smooth wall rendering."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "M-Sand",
+              "description": "Manufactured sand for concrete and structural work."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Dust",
+              "description": "Granite quarry stone dust for paver bedding and site compaction."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Cement",
+              "description": "Leading 53-grade and 43-grade cement brands including Sagar, Priya, Ramco, and ACC."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "20 mm Jelly",
+              "description": "Granite coarse aggregate for RCC roofing, columns, and beams."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "40 mm Jelly",
+              "description": "Granite coarse aggregate for foundation PCC and heavy sub-base flooring."
+            }
+          }
+        ]
+      }
+    }
+    </script>
+    
+    <!-- Google Fonts: Plus Jakarta Sans for crisp, modern industrial aesthetics -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            /* Palette: Warm white, Charcoal typography, Refined orange accents */
+            --bg-warm: #FAF9F6;
+            --bg-warm-tint: #F3F1EB;
+            --bg-card: #FFFFFF;
+            --text-charcoal: #18191B;
+            --text-heading: #121314;
+            --text-muted: #595B61;
+            --text-light: #7E828B;
+            --border-light: #E7E4DC;
+            --border-subtle: #EFECE4;
+            
+            /* Architectural Orange Accents */
+            --orange-primary: #D9531E;
+            --orange-hover: #BF4314;
+            --orange-subtle: #FFF3EB;
+            --orange-border: #FCD8C5;
+            
+            /* Industrial accents */
+            --stone-dark: #24262B;
+            --whatsapp-green: #25D366;
+            --whatsapp-hover: #1EBE5D;
+            
+            /* Layout & Spacing */
+            --radius-sm: 6px;
+            --radius-md: 10px;
+            --radius-lg: 16px;
+            --radius-xl: 24px;
+            --shadow-sm: 0 1px 3px rgba(24, 25, 27, 0.05);
+            --shadow-card: 0 4px 18px rgba(24, 25, 27, 0.06);
+            --shadow-card-hover: 0 14px 34px rgba(24, 25, 27, 0.12);
+            --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-warm);
+            color: var(--text-charcoal);
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+            max-width: 100%;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        body.menu-open {
+            overflow: hidden;
+            touch-action: none;
+        }
+
+        img, picture, svg, video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Container */
+        .container {
+            width: 100%;
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Smooth Anchor Scroll Offsets for sticky navbar */
+        section, [id] {
+            scroll-margin-top: 85px;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5 {
+            color: var(--text-heading);
+            font-weight: 700;
+            line-height: 1.25;
+            letter-spacing: -0.025em;
+            word-wrap: break-word;
+        }
+
+        p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            word-wrap: break-word;
+        }
+
+        /* Buttons & Touch Targets */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+            padding: 0.85rem 1.65rem;
+            min-height: 48px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border-radius: var(--radius-sm);
+            text-decoration: none;
+            transition: var(--transition);
+            cursor: pointer;
+            border: 1px solid transparent;
+            line-height: 1.2;
+            text-align: center;
+            user-select: none;
+        }
+
+        .btn-primary {
+            background-color: var(--orange-primary);
+            color: #FFFFFF;
+            border-color: var(--orange-primary);
+        }
+        .btn-primary:hover {
+            background-color: var(--orange-hover);
+            border-color: var(--orange-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(217, 83, 30, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: #FFFFFF;
+            color: var(--text-heading);
+            border-color: var(--border-light);
+        }
+        .btn-secondary:hover {
+            background-color: var(--bg-warm-tint);
+            border-color: var(--text-light);
+            transform: translateY(-2px);
+        }
+
+        .btn-whatsapp {
+            background-color: var(--whatsapp-green);
+            color: #FFFFFF;
+            border-color: var(--whatsapp-green);
+        }
+        .btn-whatsapp:hover {
+            background-color: var(--whatsapp-hover);
+            border-color: var(--whatsapp-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(37, 211, 102, 0.35);
+        }
+
+        .btn-sm {
+            padding: 0.6rem 1.15rem;
+            min-height: 42px;
+            font-size: 0.875rem;
+        }
+
+        .badge-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.35rem 0.85rem;
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-radius: 9999px;
+            background-color: var(--orange-subtle);
+            color: var(--orange-primary);
+            border: 1px solid var(--orange-border);
+        }
+
+        /* Header & Navigation */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgba(250, 249, 246, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-light);
+            transition: var(--transition);
+        }
+
+        .nav-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 76px;
+        }
+
+        .brand-link {
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.85rem;
+            user-select: none;
+            flex-shrink: 0;
+            overflow: visible;
+            max-width: 100%;
+        }
+
+        .brand-logo-wrap {
+            display: inline-flex;
+            align-items: center;
+            flex-shrink: 0;
+            overflow: visible;
+        }
+
+        .brand-logo-img {
+            height: 48px;
+            width: auto;
+            max-width: 100%;
+            object-fit: contain;
+            display: block;
+            overflow: visible;
+            flex-shrink: 0;
+            transition: transform 0.2s ease;
+        }
+
+        .brand-link:hover .brand-logo-img {
+            transform: scale(1.02);
+        }
+
+        /* Legacy & Fallback HTML Badge + Typography (Complete Monogram & Brand) */
+        .brand-icon, .brand-badge {
+            height: 44px;
+            min-width: 52px;
+            padding: 0 0.65rem;
+            background: linear-gradient(135deg, var(--stone-dark) 0%, #34373F 100%);
+            border-radius: var(--radius-sm);
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--orange-primary);
+            font-weight: 800;
+            font-size: 1.05rem;
+            letter-spacing: 0.04em;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            flex-shrink: 0;
+            position: relative;
+        }
+
+        .brand-text-wrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .brand-title {
+            font-size: 1.22rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            color: var(--text-heading);
+            line-height: 1.15;
+            white-space: nowrap;
+        }
+
+        .brand-subtitle {
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+            color: var(--orange-primary);
+            margin-top: 2px;
+            white-space: nowrap;
+        }
+
+        /* Mobile Drawer Header */
+        .mobile-nav-header {
+            padding: 1.1rem 1.25rem 1.25rem;
+            border-bottom: 1px solid var(--border-light);
+            margin-bottom: 0.85rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .mobile-drawer-logo {
+            height: 40px;
+            width: auto;
+            max-width: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        /* Footer Logo */
+        .brand-logo-footer {
+            height: 48px;
+            width: auto;
+            max-width: 100%;
+            object-fit: contain;
+            display: block;
+            margin-bottom: 1.25rem;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 1.6rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            font-size: 0.92rem;
+            font-weight: 600;
+            color: var(--text-charcoal);
+            position: relative;
+            transition: color 0.2s ease;
+            padding: 0.4rem 0;
+        }
+
+        .nav-links a:hover {
+            color: var(--orange-primary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--orange-primary);
+            transition: width 0.25s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+        }
+
+        /* Animated Mobile Hamburger Button */
+        .mobile-toggle {
+            display: none;
+            background: #FFFFFF;
+            border: 1px solid var(--border-light);
+            width: 46px;
+            height: 46px;
+            padding: 10px;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            color: var(--text-heading);
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 5px;
+            transition: var(--transition);
+        }
+
+        .mobile-toggle:hover {
+            background-color: var(--bg-warm-tint);
+            border-color: var(--orange-primary);
+        }
+
+        .hamburger-bar {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background-color: var(--text-heading);
+            border-radius: 2px;
+            transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease;
+            transform-origin: center;
+        }
+
+        .mobile-toggle.is-active .hamburger-bar:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+        .mobile-toggle.is-active .hamburger-bar:nth-child(2) {
+            opacity: 0;
+        }
+        .mobile-toggle.is-active .hamburger-bar:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+
+        /* Mobile Backdrop Overlay */
+        .mobile-overlay {
+            position: fixed;
+            top: 76px;
+            left: 0;
+            width: 100%;
+            height: calc(100vh - 76px);
+            background: rgba(18, 19, 22, 0.65);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            z-index: 998;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .mobile-overlay.is-visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Mobile Drawer */
+        .mobile-nav {
+            position: fixed;
+            top: 76px;
+            left: 0;
+            width: 100%;
+            max-height: calc(100vh - 76px);
+            overflow-y: auto;
+            background-color: var(--bg-card);
+            border-bottom: 2px solid var(--border-light);
+            padding: 1.25rem 1.5rem 2.25rem;
+            z-index: 999;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.16);
+            transform: translateY(-105%);
+            opacity: 0;
+            visibility: hidden;
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease, visibility 0.25s ease;
+        }
+
+        .mobile-nav.open {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .mobile-nav ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+        }
+
+        .mobile-nav a.mobile-link {
+            text-decoration: none;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--text-heading);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 50px;
+            padding: 0.6rem 0.5rem;
+            border-bottom: 1px solid var(--border-subtle);
+            transition: color 0.2s ease, padding 0.2s ease;
+        }
+
+        .mobile-nav a.mobile-link:hover,
+        .mobile-nav a.mobile-link:active {
+            color: var(--orange-primary);
+            padding-left: 0.85rem;
+        }
+
+        .mobile-nav-cta {
+            margin-top: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 82vh;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+            background-color: #121316;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            opacity: 0.44;
+            transform: scale(1.02);
+            transition: transform 6s ease-out;
+        }
+
+        .hero:hover .hero-bg {
+            transform: scale(1.05);
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(18, 19, 22, 0.68) 0%, rgba(18, 19, 22, 0.88) 100%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 820px;
+            padding: 5.5rem 0 4.5rem;
+        }
+
+        .hero-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.22);
+            padding: 0.45rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #FFB38A;
+            margin-bottom: 1.75rem;
+        }
+
+        .hero h1 {
+            color: #FFFFFF;
+            font-size: clamp(2.2rem, 5vw, 3.85rem);
+            font-weight: 800;
+            letter-spacing: -0.035em;
+            line-height: 1.15;
+            margin-bottom: 1.35rem;
+        }
+
+        .hero-desc {
+            color: #D3D6DE;
+            font-size: clamp(1.05rem, 2vw, 1.25rem);
+            line-height: 1.65;
+            margin-bottom: 2.25rem;
+            max-width: 720px;
+        }
+
+        .hero-actions {
+            display: flex;
+            align-items: center;
+            gap: 1.15rem;
+            flex-wrap: wrap;
+        }
+
+        /* Trust Stats Bar */
+        .trust-bar {
+            background-color: var(--bg-card);
+            border-bottom: 1px solid var(--border-light);
+            padding: 2.25rem 0;
+            position: relative;
+            z-index: 10;
+            box-shadow: 0 4px 14px rgba(24, 25, 27, 0.03);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+            border-left: 3px solid var(--orange-primary);
+            padding-left: 1.25rem;
+        }
+
+        .stat-number {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--text-heading);
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+        }
+
+        .stat-label {
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-top: 0.3rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        /* Section Universal Styles */
+        .section {
+            padding: 6.5rem 0;
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 780px;
+            margin: 0 auto 3.75rem;
+        }
+
+        .section-tag {
+            font-size: 0.82rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--orange-primary);
+            margin-bottom: 0.6rem;
+            display: block;
+        }
+
+        .section-title {
+            font-size: clamp(1.95rem, 3.5vw, 2.75rem);
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+        }
+
+        /* About Section (Editorial Layout) */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.05fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-image-wrapper {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+            border: 1px solid var(--border-light);
+        }
+
+        .about-image-wrapper img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.6s ease;
+        }
+
+        .about-image-wrapper:hover img {
+            transform: scale(1.03);
+        }
+
+        .about-floating-badge {
+            position: absolute;
+            bottom: 24px;
+            left: 24px;
+            background: rgba(24, 25, 27, 0.92);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            color: #FFFFFF;
+            padding: 1.25rem 1.75rem;
+            border-radius: var(--radius-md);
+            border-left: 4px solid var(--orange-primary);
+            max-width: 320px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .about-floating-badge strong {
+            display: block;
+            font-size: 1.65rem;
+            font-weight: 800;
+            color: #FFB38A;
+            line-height: 1.1;
+        }
+
+        .about-floating-badge span {
+            font-size: 0.85rem;
+            color: #D3D6DE;
+            line-height: 1.35;
+            display: block;
+            margin-top: 0.35rem;
+        }
+
+        .about-content h2 {
+            font-size: clamp(1.85rem, 3vw, 2.4rem);
+            margin-bottom: 1.35rem;
+        }
+
+        .about-content p {
+            margin-bottom: 1.25rem;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        .about-pillars {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.25rem;
+            margin: 2.25rem 0;
+        }
+
+        .about-pillar-card {
+            background-color: var(--bg-card);
+            padding: 1.25rem;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-light);
+            border-left: 3px solid var(--orange-primary);
+            transition: var(--transition);
+        }
+
+        .about-pillar-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-sm);
+            border-color: var(--orange-border);
+        }
+
+        .about-pillar-card h4 {
+            font-size: 1.02rem;
+            margin-bottom: 0.35rem;
+        }
+
+        .about-pillar-card p {
+            font-size: 0.88rem;
+            line-height: 1.45;
+            margin-bottom: 0;
+            color: var(--text-muted);
+        }
+
+        /* Manufacturing Section */
+        .mfg-section {
+            background-color: var(--bg-card);
+            border-top: 1px solid var(--border-light);
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .solid-policy-banner {
+            background: linear-gradient(135deg, #18191C 0%, #22252C 100%);
+            border: 2px solid var(--orange-border);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            color: #FFFFFF;
+            margin-bottom: 4rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .solid-policy-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 6px;
+            height: 100%;
+            background-color: var(--orange-primary);
+        }
+
+        .solid-policy-content {
+            display: grid;
+            grid-template-columns: 1.55fr 1.25fr;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        .solid-policy-heading-wrap {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .solid-policy-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(217, 83, 30, 0.22);
+            color: #FFB38A;
+            border: 1px solid rgba(217, 83, 30, 0.45);
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 0.4rem 0.9rem;
+            border-radius: 9999px;
+            width: fit-content;
+            margin-bottom: 1rem;
+        }
+
+        .solid-policy-heading-wrap h3 {
+            color: #FFFFFF;
+            font-size: clamp(1.4rem, 2.5vw, 1.95rem);
+            line-height: 1.25;
+            margin-bottom: 0.85rem;
+        }
+
+        .solid-policy-heading-wrap p {
+            color: #CFD3DD;
+            font-size: 0.98rem;
+            line-height: 1.65;
+            margin-bottom: 0;
+        }
+
+        .solid-dimensions-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.25rem;
+        }
+
+        .solid-dim-card {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: var(--radius-md);
+            padding: 1.35rem 1.2rem;
+            transition: var(--transition);
+        }
+
+        .solid-dim-card:hover {
+            background: rgba(255, 255, 255, 0.09);
+            border-color: var(--orange-primary);
+        }
+
+        .solid-dim-size {
+            font-size: 1.22rem;
+            font-weight: 800;
+            color: #FFB38A;
+            margin-bottom: 0.25rem;
+            letter-spacing: -0.02em;
+        }
+
+        .solid-dim-spec {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .solid-dim-desc {
+            font-size: 0.82rem;
+            color: #B2B6C2;
+            line-height: 1.45;
+            margin: 0;
+        }
+
+        .mfg-stages-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.25rem;
+            margin-bottom: 3.5rem;
+        }
+
+        .mfg-stage-card {
+            background-color: var(--bg-warm);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .mfg-stage-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-card-hover);
+            border-color: var(--orange-border);
+        }
+
+        .mfg-stage-media {
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+            background-color: #E2E0D8;
+        }
+
+        .mfg-stage-media img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .mfg-stage-card:hover .mfg-stage-media img {
+            transform: scale(1.05);
+        }
+
+        .mfg-stage-tag {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            background: rgba(24, 25, 27, 0.9);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            color: #FFFFFF;
+            font-size: 0.75rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            padding: 0.35rem 0.85rem;
+            border-radius: 9999px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .mfg-stage-highlight-badge {
+            position: absolute;
+            bottom: 14px;
+            right: 14px;
+            background: rgba(217, 83, 30, 0.92);
+            color: #FFFFFF;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            padding: 0.3rem 0.75rem;
+            border-radius: var(--radius-sm);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .mfg-stage-body {
+            padding: 1.85rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .mfg-stage-meta {
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--orange-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 0.35rem;
+        }
+
+        .mfg-stage-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--text-heading);
+            margin-bottom: 0.75rem;
+            line-height: 1.3;
+        }
+
+        .mfg-stage-desc {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: var(--text-muted);
+            margin-bottom: 1.25rem;
+        }
+
+        .mfg-stage-bullets {
+            list-style: none;
+            margin-top: auto;
+            border-top: 1px solid var(--border-subtle);
+            padding-top: 1.15rem;
+        }
+
+        .mfg-stage-bullets li {
+            position: relative;
+            padding-left: 1.35rem;
+            font-size: 0.88rem;
+            color: var(--text-charcoal);
+            margin-bottom: 0.45rem;
+            line-height: 1.45;
+        }
+
+        .mfg-stage-bullets li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--orange-primary);
+            font-weight: 800;
+        }
+
+        .mfg-bottom-cta {
+            background-color: var(--bg-warm-tint);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-lg);
+            padding: 2.25rem 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .mfg-bottom-cta h4 {
+            font-size: 1.25rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .mfg-bottom-cta p {
+            font-size: 0.94rem;
+            margin: 0;
+        }
+
+        /* Products Section */
+        .products-section {
+            background-color: var(--bg-warm-tint);
+            border-top: 1px solid var(--border-light);
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .catalogue-filters {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.85rem;
+            margin-bottom: 3.5rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-pill {
+            padding: 0.7rem 1.5rem;
+            min-height: 46px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 9999px;
+            font-size: 0.92rem;
+            font-weight: 700;
+            cursor: pointer;
+            border: 1px solid var(--border-light);
+            background: var(--bg-card);
+            color: var(--text-muted);
+            transition: var(--transition);
+            white-space: nowrap;
+        }
+
+        .filter-pill:hover {
+            border-color: var(--orange-primary);
+            color: var(--text-heading);
+            transform: translateY(-1px);
+        }
+
+        .filter-pill.active {
+            background-color: var(--stone-dark);
+            color: #FFFFFF;
+            border-color: var(--stone-dark);
+            box-shadow: 0 4px 14px rgba(24, 25, 27, 0.18);
+        }
+
+        .category-group-header {
+            margin-bottom: 2.25rem;
+            padding-bottom: 1.25rem;
+            border-bottom: 2px solid var(--border-light);
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .category-group-header h3 {
+            font-size: 1.75rem;
+            color: var(--text-heading);
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+            flex-wrap: wrap;
+        }
+
+        .category-tag-badge {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            padding: 0.35rem 0.85rem;
+            border-radius: 9999px;
+            background-color: var(--orange-subtle);
+            color: var(--orange-primary);
+            border: 1px solid var(--orange-border);
+        }
+
+        .category-tag-badge.supplied {
+            background-color: #ECEEF2;
+            color: #2D3340;
+            border-color: #D3D8E2;
+        }
+
+        .category-group-desc {
+            font-size: 0.98rem;
+            color: var(--text-muted);
+            max-width: 680px;
+            margin-top: 0.35rem;
+        }
+
+        .manufactured-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.25rem;
+            margin-bottom: 4.75rem;
+        }
+
+        .supplied-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .product-card {
+            background-color: var(--bg-card);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            border: 1px solid var(--border-light);
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            flex-direction: column;
+            transition: var(--transition);
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-card-hover);
+            border-color: var(--orange-border);
+        }
+
+        .product-media {
+            position: relative;
+            height: 230px;
+            overflow: hidden;
+            background-color: #E6E4DE;
+        }
+
+        .product-media img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .product-card:hover .product-media img {
+            transform: scale(1.05);
+        }
+
+        .product-badge-overlay {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            background: rgba(24, 25, 27, 0.88);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            color: #FFFFFF;
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 0.3rem 0.75rem;
+            border-radius: 9999px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .product-badge-overlay.badge-manufactured {
+            background: linear-gradient(135deg, rgba(217, 83, 30, 0.95) 0%, rgba(191, 67, 20, 0.98) 100%);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .product-body {
+            padding: 1.75rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .product-category {
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--orange-primary);
+            margin-bottom: 0.4rem;
+        }
+
+        .product-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-bottom: 0.65rem;
+            line-height: 1.3;
+        }
+
+        .product-desc {
+            font-size: 0.94rem;
+            line-height: 1.55;
+            color: var(--text-muted);
+            margin-bottom: 1.15rem;
+        }
+
+        .product-specs {
+            background-color: var(--bg-warm);
+            padding: 0.85rem 1rem;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border-subtle);
+            font-size: 0.85rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .product-specs strong {
+            color: var(--text-heading);
+            display: block;
+            margin-bottom: 0.2rem;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .product-features-list {
+            list-style: none;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .product-features-list li {
+            position: relative;
+            padding-left: 1.35rem;
+            font-size: 0.88rem;
+            color: var(--text-charcoal);
+            margin-bottom: 0.45rem;
+            line-height: 1.45;
+        }
+
+        .product-features-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--orange-primary);
+            font-weight: 800;
+            font-size: 0.85rem;
+        }
+
+        .product-footer {
+            padding-top: 1.25rem;
+            border-top: 1px solid var(--border-subtle);
+            margin-top: auto;
+        }
+
+        .btn-whatsapp-product {
+            width: 100%;
+            background-color: var(--whatsapp-green);
+            color: #FFFFFF;
+            border: 1px solid var(--whatsapp-green);
+            font-size: 0.92rem;
+            font-weight: 700;
+            padding: 0.75rem 1rem;
+            min-height: 48px;
+            border-radius: var(--radius-sm);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.55rem;
+            text-decoration: none;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .btn-whatsapp-product:hover {
+            background-color: var(--whatsapp-hover);
+            border-color: var(--whatsapp-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(37, 211, 102, 0.35);
+            color: #FFFFFF;
+        }
+
+        /* Why Choose Us Section */
+        .why-us-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.75rem;
+        }
+
+        .why-card {
+            background-color: var(--bg-card);
+            padding: 2.25rem 1.75rem;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-light);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .why-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-card-hover);
+            border-color: var(--orange-border);
+        }
+
+        .why-icon-box {
+            width: 54px;
+            height: 54px;
+            border-radius: var(--radius-md);
+            background-color: var(--orange-subtle);
+            color: var(--orange-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .why-icon-box svg {
+            width: 28px;
+            height: 28px;
+        }
+
+        .why-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+
+        .why-desc {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: var(--text-muted);
+            margin-bottom: 1.25rem;
+            flex-grow: 1;
+        }
+
+        .why-badge {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--orange-primary);
+            padding-top: 0.85rem;
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        /* ========================================================
+           DELIVERY & SERVICE AREAS SECTION STYLES
+           ======================================================== */
+        .delivery-section {
+            background-color: var(--stone-dark);
+            color: #FFFFFF;
+            border-top: 1px solid #363942;
+        }
+
+        .delivery-section h2, .delivery-section h3, .delivery-section h4 {
+            color: #FFFFFF;
+        }
+
+        .delivery-section p {
+            color: #B4B8C4;
+        }
+
+        .delivery-highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 3.5rem;
+        }
+
+        .delivery-highlight-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 1.15rem;
+            transition: var(--transition);
+        }
+
+        .delivery-highlight-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: var(--orange-primary);
+            transform: translateY(-2px);
+        }
+
+        .delivery-highlight-icon {
+            width: 46px;
+            height: 46px;
+            border-radius: var(--radius-sm);
+            background: rgba(217, 83, 30, 0.22);
+            color: #FFB38A;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            border: 1px solid rgba(217, 83, 30, 0.35);
+        }
+
+        .delivery-highlight-icon svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .delivery-highlight-content h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.35rem;
+            color: #FFFFFF;
+        }
+
+        .delivery-highlight-content p {
+            font-size: 0.88rem;
+            line-height: 1.55;
+            margin: 0;
+            color: #C2C6D2;
+        }
+
+        .delivery-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            margin-bottom: 3.5rem;
+        }
+
+        .fleet-card {
+            background: #1B1D22;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            border: 1px solid #2F333C;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+            display: flex;
+            flex-direction: column;
+            transition: var(--transition);
+        }
+
+        .fleet-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--orange-primary);
+        }
+
+        .fleet-media {
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+            background-color: #262932;
+        }
+
+        .fleet-media img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .fleet-card:hover .fleet-media img {
+            transform: scale(1.05);
+        }
+
+        .fleet-badge {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #FFB38A;
+            margin-bottom: 0.4rem;
+        }
+
+        .fleet-body {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .fleet-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .fleet-capacity {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #E2E4EB;
+            margin-bottom: 1rem;
+        }
+
+        .fleet-desc {
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .fleet-features {
+            list-style: none;
+            margin-top: auto;
+            border-top: 1px solid #2F333C;
+            padding-top: 1.25rem;
+        }
+
+        .fleet-features li {
+            position: relative;
+            padding-left: 1.35rem;
+            font-size: 0.88rem;
+            color: #D3D6DE;
+            margin-bottom: 0.45rem;
+            line-height: 1.45;
+        }
+
+        .fleet-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--orange-primary);
+            font-weight: 800;
+        }
+
+        /* Service Areas, GPS Coordinates & Action Banner */
+        .coverage-banner {
+            background: linear-gradient(135deg, #22252D 0%, #17181D 100%);
+            border: 2px solid #363942;
+            border-radius: var(--radius-lg);
+            padding: 2.75rem 2.5rem;
+            display: grid;
+            grid-template-columns: 1.25fr 1fr;
+            gap: 2.75rem;
+            align-items: center;
+            box-shadow: 0 12px 34px rgba(0, 0, 0, 0.3);
+        }
+
+        .coverage-info h3 {
+            font-size: 1.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .coverage-badge-large {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(217, 83, 30, 0.22);
+            border: 1px solid rgba(217, 83, 30, 0.45);
+            color: #FF9B6A;
+            font-size: 0.82rem;
+            font-weight: 700;
+            padding: 0.45rem 0.95rem;
+            border-radius: 9999px;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        .factory-coords-box {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: var(--radius-sm);
+            padding: 1rem 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0.85rem;
+            margin: 1.35rem 0 1.25rem;
+        }
+
+        .coords-label {
+            font-size: 0.8rem;
+            color: #A6ABB8;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .coords-value {
+            font-family: monospace;
+            font-size: 1rem;
+            font-weight: 800;
+            color: #FFB38A;
+            letter-spacing: 0.03em;
+        }
+
+        .btn-directions {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: transparent;
+            color: #FFFFFF;
+            border: 1px solid rgba(255, 255, 255, 0.28);
+            padding: 0.65rem 1.15rem;
+            border-radius: var(--radius-sm);
+            font-size: 0.88rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .btn-directions:hover {
+            background-color: rgba(255, 255, 255, 0.12);
+            border-color: #FFFFFF;
+            color: #FFFFFF;
+        }
+
+        .coverage-cta-box {
+            background: #1B1D22;
+            border: 1px solid #363942;
+            border-radius: var(--radius-md);
+            padding: 2.25rem 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.15rem;
+            text-align: center;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .coverage-cta-box h4 {
+            font-size: 1.3rem;
+            color: #FFFFFF;
+            margin-bottom: 0.15rem;
+        }
+
+        .coverage-cta-box p {
+            font-size: 0.92rem;
+            color: #B4B8C4;
+            line-height: 1.55;
+            margin: 0;
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.15fr;
+            gap: 4rem;
+        }
+
+        .contact-info-wrap h2 {
+            font-size: clamp(1.95rem, 3.2vw, 2.6rem);
+            margin-bottom: 1.15rem;
+        }
+
+        .contact-card-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            margin: 2rem 0;
+        }
+
+        .contact-item-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            padding: 1.35rem 1.6rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 1.25rem;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .contact-item-card:hover {
+            border-color: var(--orange-border);
+            transform: translateX(4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .contact-item-icon {
+            width: 46px;
+            height: 46px;
+            border-radius: var(--radius-sm);
+            background-color: var(--orange-subtle);
+            color: var(--orange-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            border: 1px solid var(--orange-border);
+        }
+
+        .contact-item-icon.whatsapp-icon {
+            background-color: #E8F8EE;
+            color: var(--whatsapp-green);
+            border-color: #C3EED1;
+        }
+
+        .contact-item-details {
+            flex-grow: 1;
+        }
+
+        .contact-item-details h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+            color: var(--text-heading);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .contact-item-details p {
+            font-size: 0.94rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-card-actions {
+            margin-top: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-call {
+            background-color: var(--stone-dark);
+            color: #FFFFFF;
+            border: 1px solid var(--stone-dark);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.55rem 1.15rem;
+            min-height: 44px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            border-radius: var(--radius-sm);
+            text-decoration: none;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .btn-call:hover {
+            background-color: #000000;
+            color: #FFFFFF;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+        }
+
+        .btn-directions-orange {
+            background-color: var(--orange-subtle);
+            color: var(--orange-primary);
+            border: 1px solid var(--orange-border);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.55rem 1.15rem;
+            min-height: 44px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            border-radius: var(--radius-sm);
+            text-decoration: none;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .btn-directions-orange:hover {
+            background-color: var(--orange-primary);
+            color: #FFFFFF;
+            border-color: var(--orange-primary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(217, 83, 30, 0.25);
+        }
+
+        .btn-whatsapp-action {
+            background-color: var(--whatsapp-green);
+            color: #FFFFFF;
+            border: 1px solid var(--whatsapp-green);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.55rem 1.15rem;
+            min-height: 44px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            border-radius: var(--radius-sm);
+            text-decoration: none;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .btn-whatsapp-action:hover {
+            background-color: var(--whatsapp-hover);
+            color: #FFFFFF;
+            border-color: var(--whatsapp-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
+        }
+
+        .contact-badge-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            background-color: var(--orange-subtle);
+            color: var(--orange-primary);
+            padding: 0.2rem 0.6rem;
+            border-radius: 9999px;
+            border: 1px solid var(--orange-border);
+        }
+
+        .contact-badge-pill.green {
+            background-color: #E8F8EE;
+            color: #128C7E;
+            border-color: #C3EED1;
+        }
+
+        /* Quick Enquiry Form / Calculator */
+        .quote-box {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-xl);
+            padding: 2.75rem 2.25rem;
+            box-shadow: var(--shadow-card);
+            position: relative;
+        }
+
+        .quote-box h3 {
+            font-size: 1.65rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .quote-box p {
+            font-size: 0.95rem;
+            margin-bottom: 1.75rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.35rem;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: var(--text-heading);
+            margin-bottom: 0.45rem;
+        }
+
+        /* iOS Safari Auto-Zoom Fix: font-size must be at least 16px */
+        .form-control {
+            width: 100%;
+            padding: 0.85rem 1rem;
+            font-size: 16px !important;
+            min-height: 48px;
+            font-family: inherit;
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-sm);
+            background-color: var(--bg-warm);
+            color: var(--text-heading);
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--orange-primary);
+            background-color: #FFFFFF;
+            box-shadow: 0 0 0 3px rgba(217, 83, 30, 0.15);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #121316;
+            color: #A3A7B2;
+            padding: 5rem 0 2.5rem;
+            border-top: 1px solid #27292F;
+        }
+
+        .footer h4 {
+            color: #FFFFFF;
+            font-size: 1.15rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+            gap: 3rem;
+            margin-bottom: 3.5rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.65rem;
+        }
+
+        .footer-links a {
+            color: #A3A7B2;
+            text-decoration: none;
+            font-size: 0.92rem;
+            transition: color 0.2s ease;
+            display: inline-block;
+            padding: 0.2rem 0;
+        }
+
+        .footer-links a:hover {
+            color: #FFFFFF;
+        }
+
+        .footer-bottom {
+            padding-top: 2rem;
+            border-top: 1px solid #23252B;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.88rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        /* Floating WhatsApp Action */
+        .floating-whatsapp {
+            position: fixed;
+            bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+            right: 24px;
+            z-index: 990;
+            background-color: var(--whatsapp-green);
+            color: #FFFFFF;
+            padding: 0.85rem 1.4rem;
+            min-height: 48px;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+            transition: var(--transition);
+        }
+
+        .floating-whatsapp:hover {
+            background-color: var(--whatsapp-hover);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 12px 28px rgba(37, 211, 102, 0.5);
+            color: #FFFFFF;
+        }
+
+        .floating-whatsapp svg {
+            width: 22px;
+            height: 22px;
+            flex-shrink: 0;
+        }
+
+        /* Back to Top Floating Button */
+        .back-to-top {
+            position: fixed;
+            bottom: calc(84px + env(safe-area-inset-bottom, 0px));
+            right: 24px;
+            z-index: 989;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background-color: var(--stone-dark);
+            color: #FFFFFF;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(12px);
+            transition: var(--transition);
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .back-to-top:hover {
+            background-color: var(--orange-primary);
+            border-color: var(--orange-primary);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(217, 83, 30, 0.35);
+        }
+
+        .back-to-top svg {
+            width: 20px;
+            height: 20px;
+            stroke-width: 2.5;
+        }
+
+        /* ========================================================
+           RESPONSIVE BREAKPOINTS (Mobile-First Architecture)
+           ======================================================== */
+
+        /* Tablets & Medium Screens (max-width: 1024px) */
+        @media (max-width: 1024px) {
+            .section {
+                padding: 5rem 0;
+            }
+            .section-header {
+                margin-bottom: 3rem;
+            }
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+            .about-grid, .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            .about-image-wrapper img {
+                height: 420px;
+            }
+            .solid-policy-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .mfg-stages-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+            .manufactured-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+            .supplied-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+            .why-us-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+            .delivery-highlights-grid {
+                grid-template-columns: 1fr;
+                gap: 1.25rem;
+            }
+            .coverage-banner {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                padding: 2rem;
+            }
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2.5rem;
+            }
+            .brand-logo-img {
+                height: 44px;
+            }
+            .nav-links {
+                gap: 1.15rem;
+            }
+            .nav-links a {
+                font-size: 0.88rem;
+            }
+        }
+
+        /* Medium Tablets & Below (max-width: 992px) */
+        @media (max-width: 992px) {
+            .nav-links, .nav-actions .btn-whatsapp {
+                display: none;
+            }
+            .mobile-toggle {
+                display: flex;
+            }
+            .mobile-overlay {
+                top: 76px;
+                height: calc(100vh - 76px);
+            }
+            .mobile-nav {
+                top: 76px;
+                max-height: calc(100vh - 76px);
+            }
+        }
+
+        /* Small Tablets & Mobile Devices (max-width: 768px) */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1.25rem;
+            }
+            .section {
+                padding: 4.25rem 0;
+            }
+            .section-header {
+                margin-bottom: 2.5rem;
+            }
+            section, [id] {
+                scroll-margin-top: 70px;
+            }
+
+            /* Header */
+            .nav-content {
+                height: 70px;
+            }
+            .nav-links, .nav-actions .btn-whatsapp {
+                display: none;
+            }
+            .mobile-toggle {
+                display: flex;
+            }
+            .mobile-overlay {
+                top: 70px;
+                height: calc(100vh - 70px);
+            }
+            .mobile-nav {
+                top: 70px;
+                max-height: calc(100vh - 70px);
+            }
+            .brand-logo-img {
+                height: 38px;
+            }
+            .brand-icon, .brand-badge {
+                height: 38px;
+                min-width: 46px;
+                font-size: 0.95rem;
+            }
+            .brand-title {
+                font-size: 1.08rem;
+            }
+            .brand-subtitle {
+                font-size: 0.62rem;
+            }
+
+            /* Hero Section */
+            .hero {
+                min-height: 580px;
+            }
+            .hero-bg {
+                object-position: 68% center;
+                opacity: 0.38;
+            }
+            .hero-content {
+                padding: 3.5rem 0 3rem;
+            }
+            .hero-pill {
+                font-size: 0.75rem;
+                padding: 0.4rem 0.85rem;
+                margin-bottom: 1.25rem;
+            }
+            .hero h1 {
+                font-size: clamp(2rem, 8vw, 2.75rem);
+                margin-bottom: 1.15rem;
+            }
+            .hero-desc {
+                font-size: 1.02rem;
+                line-height: 1.6;
+                margin-bottom: 2rem;
+            }
+            .hero-actions {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0.85rem;
+                width: 100%;
+            }
+            .hero-actions .btn {
+                width: 100%;
+                min-height: 50px;
+                font-size: 1rem;
+            }
+
+            /* Stats Bar */
+            .trust-bar {
+                padding: 1.75rem 0;
+            }
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.25rem 1rem;
+            }
+            .stat-item {
+                padding-left: 0.85rem;
+            }
+            .stat-number {
+                font-size: 1.45rem;
+            }
+            .stat-label {
+                font-size: 0.78rem;
+            }
+
+            /* About Section */
+            .about-image-wrapper img {
+                height: 320px;
+            }
+            .about-floating-badge {
+                bottom: 16px;
+                left: 16px;
+                right: 16px;
+                max-width: none;
+                padding: 1rem 1.25rem;
+            }
+            .about-floating-badge strong {
+                font-size: 1.35rem;
+            }
+            .about-floating-badge span {
+                font-size: 0.8rem;
+            }
+            .about-pillars {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+                margin: 1.75rem 0;
+            }
+
+            /* Manufacturing Section */
+            .solid-policy-banner {
+                padding: 1.75rem 1.25rem;
+                margin-bottom: 2.75rem;
+            }
+            .solid-dimensions-grid {
+                grid-template-columns: 1fr;
+                gap: 0.85rem;
+            }
+            .mfg-stages-grid {
+                grid-template-columns: 1fr;
+                gap: 1.75rem;
+                margin-bottom: 2.5rem;
+            }
+            .mfg-stage-media {
+                height: 220px;
+            }
+            .mfg-stage-body {
+                padding: 1.35rem;
+            }
+            .mfg-bottom-cta {
+                padding: 1.75rem 1.25rem;
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .mfg-bottom-cta .btn {
+                width: 100%;
+            }
+
+            /* Product Catalogue */
+            .catalogue-filters {
+                justify-content: flex-start;
+                overflow-x: auto;
+                flex-wrap: nowrap;
+                padding: 0.25rem 0 0.85rem;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
+                margin-bottom: 2.25rem;
+            }
+            .catalogue-filters::-webkit-scrollbar {
+                display: none;
+            }
+            .filter-pill {
+                flex-shrink: 0;
+                padding: 0.65rem 1.25rem;
+                font-size: 0.88rem;
+            }
+
+            .category-group-header {
+                margin-bottom: 1.75rem;
+            }
+            .category-group-header h3 {
+                font-size: 1.4rem;
+            }
+            .manufactured-grid,
+            .supplied-grid {
+                grid-template-columns: 1fr;
+                gap: 1.75rem;
+            }
+            .manufactured-grid {
+                margin-bottom: 3.5rem;
+            }
+            .product-media {
+                height: 210px;
+            }
+            .product-body {
+                padding: 1.35rem;
+            }
+            .product-title {
+                font-size: 1.25rem;
+            }
+
+            /* Why Choose Us */
+            .why-us-grid {
+                grid-template-columns: 1fr;
+                gap: 1.25rem;
+            }
+            .why-card {
+                padding: 1.75rem 1.35rem;
+            }
+
+            /* Delivery & Service Areas on Mobile */
+            .delivery-highlights-grid {
+                grid-template-columns: 1fr;
+                gap: 0.85rem;
+                margin-bottom: 2.5rem;
+            }
+            .delivery-grid {
+                grid-template-columns: 1fr;
+                gap: 1.75rem;
+                margin-bottom: 2.5rem;
+            }
+            .fleet-media {
+                height: 210px;
+            }
+            .fleet-body {
+                padding: 1.5rem 1.25rem;
+            }
+            .fleet-title {
+                font-size: 1.3rem;
+            }
+            .coverage-banner {
+                padding: 1.75rem 1.25rem;
+                gap: 2rem;
+            }
+            .coverage-info h3 {
+                font-size: 1.35rem;
+            }
+            .coverage-cta-box {
+                padding: 1.5rem 1.25rem;
+            }
+            .factory-coords-box {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+
+            /* Contact & Quick Form */
+            .contact-card-list {
+                margin: 1.5rem 0;
+                gap: 1rem;
+            }
+            .contact-item-card {
+                padding: 1.15rem;
+            }
+            .quote-box {
+                padding: 2rem 1.35rem;
+                border-radius: var(--radius-lg);
+            }
+            .quote-box h3 {
+                font-size: 1.4rem;
+            }
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+
+            /* Footer */
+            .footer {
+                padding: 3.5rem 0 2rem;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2.25rem;
+                margin-bottom: 2.5rem;
+            }
+            .footer-bottom {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.75rem;
+            }
+
+            /* Floating WhatsApp Action Pill on Mobile */
+            .floating-whatsapp {
+                bottom: calc(18px + env(safe-area-inset-bottom, 0px));
+                right: 18px;
+                padding: 0.85rem;
+                width: 52px;
+                height: 52px;
+                border-radius: 50%;
+                justify-content: center;
+                box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+            }
+            .floating-whatsapp span {
+                display: none;
+            }
+            .floating-whatsapp svg {
+                width: 26px;
+                height: 26px;
+            }
+
+            .back-to-top {
+                bottom: calc(78px + env(safe-area-inset-bottom, 0px));
+                right: 22px;
+                width: 44px;
+                height: 44px;
+            }
+        }
+
+        /* Extra Small Phones (max-width: 420px) */
+        @media (max-width: 420px) {
+            .container {
+                padding: 0 0.85rem;
+            }
+            .nav-content {
+                height: 64px;
+                gap: 0.5rem;
+            }
+            .mobile-overlay {
+                top: 64px;
+                height: calc(100vh - 64px);
+            }
+            .mobile-nav {
+                top: 64px;
+                max-height: calc(100vh - 64px);
+            }
+            .brand-logo-img {
+                height: 34px;
+            }
+            .mobile-toggle {
+                width: 42px;
+                height: 42px;
+                padding: 8px;
+            }
+            .brand-icon, .brand-badge {
+                height: 34px;
+                min-width: 42px;
+                font-size: 0.9rem;
+                padding: 0 0.4rem;
+            }
+            .brand-title {
+                font-size: 0.98rem;
+            }
+            .brand-subtitle {
+                font-size: 0.56rem;
+            }
+            .hero {
+                min-height: 540px;
+            }
+            .hero-bg {
+                object-position: 72% center;
+            }
+            .hero h1 {
+                font-size: 1.85rem;
+            }
+            .stat-number {
+                font-size: 1.3rem;
+            }
+            .stat-label {
+                font-size: 0.72rem;
+            }
+            .about-image-wrapper img {
+                height: 260px;
+            }
+            .mfg-stage-media {
+                height: 200px;
+            }
+            .product-media {
+                height: 190px;
+            }
+            .coords-value {
+                font-size: 0.88rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Mobile Backdrop Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay" aria-hidden="true"></div>
+
+    <!-- Top Sticky Navigation -->
+    <header class="navbar" id="topNavbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#home" class="brand-link" aria-label="KRG CONSTRUCTIONS Home">
+                    <div class="brand-logo-wrap">
+                        <img src="/images/krg-logo.svg" 
+                             alt="KRG CONSTRUCTIONS Logo" 
+                             class="brand-logo-img" 
+                             width="360" 
+                             height="64" 
+                             fetchpriority="high" 
+                             decoding="async">
+                    </div>
+                    <div class="brand-text-wrap sr-only">
+                        <span class="brand-title">KRG CONSTRUCTIONS</span>
+                        <span class="brand-subtitle">SINCE 2010 • MADAGONDAPALLI</span>
+                    </div>
+                </a>
+
+                <nav aria-label="Main Navigation">
+                    <ul class="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#manufacturing">Manufacturing</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#why-us">Why Choose Us</a></li>
+                        <li><a href="#delivery">Delivery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="nav-actions">
+                    <a th:href="'https://wa.me/' + ${company.whatsappNumber()} + '?text=' + ${company.whatsappMessage()}" 
+                       target="_blank" 
+                       rel="noopener" 
+                       class="btn btn-whatsapp btn-sm"
+                       aria-label="Enquire with KRG on WhatsApp">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                        <span>WhatsApp Enquiry</span>
+                    </a>
+
+                    <!-- Mobile Hamburger Button with 3 animating bars -->
+                    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileNav">
+                        <span class="hamburger-bar"></span>
+                        <span class="hamburger-bar"></span>
+                        <span class="hamburger-bar"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation Menu">
+            <div class="mobile-nav-header">
+                <a href="#home" class="brand-link" aria-label="KRG CONSTRUCTIONS Home" onclick="closeMobileMenu()">
+                    <img src="/images/krg-logo.svg" 
+                         alt="KRG CONSTRUCTIONS Logo" 
+                         class="brand-logo-img mobile-drawer-logo" 
+                         width="360" 
+                         height="64" 
+                         loading="lazy" 
+                         decoding="async">
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <a href="#home" class="mobile-link">
+                        <span>Home</span>
+                        <span style="color: var(--orange-primary);">&rarr;</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" class="mobile-link">
+                        <span>About Our Company</span>
+                        <span style="color: var(--orange-primary);">&rarr;</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#manufacturing" class="mobile-link">
+                        <span>Manufacturing Plant</span>
+                        <span style="color: var(--orange-primary);">&rarr;</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#products" class="mobile-link">
+                        <span>Product Catalogue</span>
+                        <span style="color: var(--orange-primary);">&rarr;</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#why-us" class="mobile-link">
+                        <span>Why Choose Us</span>
+                        <span style="color: var(--orange-primary);">&rarr;</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#delivery" class="mobile-link">
+                        <span>Delivery & Service Areas</span>
+                        <span style="color: var(--orange-primary);">&rarr;</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="mobile-link">
+                        <span>Contact & Directions</span>
+                        <span style="color: var(--orange-primary);">&rarr;</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="mobile-nav-cta">
+                <a th:href="'https://wa.me/' + ${company.whatsappNumber()} + '?text=' + ${#uris.escapeQueryParam(company.deliveryEnquiryMessage())}" 
+                   target="_blank" 
+                   rel="noopener" 
+                   class="btn btn-whatsapp" style="width: 100%;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                    </svg>
+                    <span>Check Delivery Availability</span>
+                </a>
+                <a th:href="'tel:' + ${company.phone()}" class="btn btn-secondary" style="width: 100%;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    <span th:text="${company.phoneDisplay()}">+91 97872 67811</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <img th:src="@{${heroImage}}" 
+             alt="Worker operating semi-automatic hydraulic pressing machine compressing cement mixture into solid rectangular bricks at KRG CONSTRUCTIONS plant" 
+             class="hero-bg"
+             fetchpriority="high"
+             decoding="async"
+             width="1920"
+             height="1080">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-pill">
+                    <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background-color:#FF8C42;"></span>
+                    ESTABLISHED 2010 • MADAGONDAPALLI
+                </div>
+                <h1>Building Stronger Foundations Since 2010.</h1>
+                <p class="hero-desc">
+                    Family-owned manufacturer and trusted supplier of premium 4" & 6" solid cement bricks, triple-washed M-Sand, P-Sand, cement, and graded blue metal jelly. Delivering directly to your construction site across approximately 30–35 km from our Madagondapalli factory.
+                </p>
+                <div class="hero-actions">
+                    <a href="#products" class="btn btn-primary">
+                        <span>Explore Products</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a th:href="'https://wa.me/' + ${company.whatsappNumber()} + '?text=' + ${company.whatsappMessage()}" 
+                       target="_blank" 
+                       rel="noopener" 
+                       class="btn btn-whatsapp">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                        <span>Contact on WhatsApp</span>
+                    </a>
+                    <a th:href="'tel:' + ${company.phone()}" class="btn btn-secondary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <span th:text="${company.phoneDisplay()}">+91 97872 67811</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Stats Bar -->
+    <div class="trust-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">2010</span>
+                    <span class="stat-label">Established & Family-Owned</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">Semi-Auto</span>
+                    <span class="stat-label">Hydraulic Brick Plant</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">30–35 km</span>
+                    <span class="stat-label">Coverage From Madagondapalli</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">Delivery Included</span>
+                    <span class="stat-label">Charges Included in Product Price</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section (Editorial Layout) -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <img th:src="@{${aboutImage}}" 
+                         alt="Real cement brick manufacturing yard and cured solid cement brick stacks in Madagondapalli Tamil Nadu"
+                         loading="lazy"
+                         decoding="async"
+                         width="600"
+                         height="500">
+                    <div class="about-floating-badge">
+                        <strong>14+ Years</strong>
+                        <span>Of Family-Owned Construction Material Supply in Madagondapalli</span>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <span class="section-tag">ABOUT OUR COMPANY</span>
+                    <h2>Family-Owned Construction Materials Manufacturer & Supplier</h2>
+                    <p>
+                        Established in <strong>2010</strong>, <strong>KRG CONSTRUCTIONS</strong> is an independent, family-owned business situated in <strong>Madagondapalli, Tamil Nadu</strong>.
+                    </p>
+                    <p>
+                        We operate with a clear dual purpose: as a direct <strong>manufacturer</strong> of high-density solid cement bricks, and as a dependable <strong>supplier</strong> of essential civil construction materials including triple-washed M-Sand, P-Sand, stone dust, verified brand cement, and machine-crushed 20 mm / 40 mm blue metal jelly.
+                    </p>
+                    <p>
+                        Over the past 14+ years, our family has built enduring relationships with homeowners, masons, and civil builders across Madagondapalli and surrounding regions. We focus squarely on dependable product quality, honest material measures, and attentive customer service on every single order.
+                    </p>
+
+                    <div class="about-pillars">
+                        <div class="about-pillar-card">
+                            <h4>Family-Owned Ownership</h4>
+                            <p>Direct owner supervision means honest advice, fair billing, and personal accountability.</p>
+                        </div>
+                        <div class="about-pillar-card">
+                            <h4>Manufacturer & Supplier</h4>
+                            <p>Direct plant rates on solid cement bricks combined with complete site material delivery.</p>
+                        </div>
+                        <div class="about-pillar-card">
+                            <h4>Customer-First Service</h4>
+                            <p>We welcome all orders — whether you need small top-up loads or full foundation deliveries.</p>
+                        </div>
+                        <div class="about-pillar-card">
+                            <h4>Local Madagondapalli Base</h4>
+                            <p>Company-managed tractor and lorry fleet ensuring swift site drops within approximately 30–35 km.</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="#manufacturing" class="btn btn-primary btn-sm">
+                            <span>Explore Our Manufacturing</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#delivery" class="btn btn-secondary btn-sm">
+                            <span>Delivery & Service Areas</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Manufacturing Section -->
+    <section class="section mfg-section" id="manufacturing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">SEMI-AUTOMATIC BRICK PLANT</span>
+                <h2 class="section-title">How We Manufacture Solid Cement Bricks</h2>
+                <p class="section-subtitle">
+                    KRG CONSTRUCTIONS manufactures 4-inch and 6-inch solid cement bricks using semi-automatic machinery, controlled hydraulic pressure, and systematic water curing in Madagondapalli.
+                </p>
+            </div>
+
+            <!-- Strict 100% Solid Bricks Specification Policy Banner -->
+            <div class="solid-policy-banner">
+                <div class="solid-policy-content">
+                    <div class="solid-policy-heading-wrap">
+                        <div class="solid-policy-badge">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            <span>100% Solid Cement Bricks Specification</span>
+                        </div>
+                        <h3>Completely Solid Concrete Bodies — Never Hollow Blocks</h3>
+                        <p>
+                            Every cement brick manufactured at our plant is <strong>100% completely solid throughout</strong>. We strictly do not manufacture or supply hollow blocks, perforated bricks, or bricks with core cavities. Our bricks are engineered with continuous dense concrete for maximum compressive strength, load-bearing durability, and acoustic insulation.
+                        </p>
+                    </div>
+
+                    <div class="solid-dimensions-grid">
+                        <div class="solid-dim-card">
+                            <div class="solid-dim-size">4-inch Solid Bricks</div>
+                            <span class="solid-dim-spec">Standard 4" Width • Solid Body</span>
+                            <p class="solid-dim-desc">
+                                Engineered for internal partition walls, compound boundary fencing, parapets, and residential room divisions.
+                            </p>
+                        </div>
+                        <div class="solid-dim-card">
+                            <div class="solid-dim-size">6-inch Solid Bricks</div>
+                            <span class="solid-dim-spec">Standard 6" Width • Solid Body</span>
+                            <p class="solid-dim-desc">
+                                Heavy-duty dense solid bricks for exterior load-bearing walls, foundation plinths, and structural masonry.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4-Stage Showcase Featuring Real Industrial Photography -->
+            <div class="mfg-stages-grid">
+                <div th:each="stage : ${manufacturingStages}" class="mfg-stage-card">
+                    <div class="mfg-stage-media">
+                        <img th:src="@{${stage.imageUrl()}}" 
+                             th:alt="${stage.imageAlt()}" 
+                             loading="lazy"
+                             decoding="async"
+                             width="600"
+                             height="260">
+                        <span class="mfg-stage-tag" th:text="${stage.stageName()}">Stage 01</span>
+                        <span class="mfg-stage-highlight-badge" th:text="${stage.focusHighlight()}">Highlight</span>
+                    </div>
+
+                    <div class="mfg-stage-body">
+                        <span class="mfg-stage-meta" th:text="'Step ' + ${stage.stepNumber()} + ' of 4'">Step 1 of 4</span>
+                        <h3 class="mfg-stage-title" th:text="${stage.title()}">Stage Title</h3>
+                        <p class="mfg-stage-desc" th:text="${stage.description()}">Stage description</p>
+
+                        <ul class="mfg-stage-bullets">
+                            <li th:each="point : ${stage.details()}" th:text="${point}">Detail point</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Manufacturing CTA Box -->
+            <div class="mfg-bottom-cta">
+                <div>
+                    <h4>Need 4-inch or 6-inch Solid Cement Bricks for Your Site?</h4>
+                    <p>Direct factory loads delivered within approximately 30–35 km from our Madagondapalli factory.</p>
+                </div>
+                <div style="display: flex; gap: 0.85rem; flex-wrap: wrap;">
+                    <a th:href="'https://wa.me/' + ${company.whatsappNumber()} + '?text=' + ${#uris.escapeQueryParam('Hello KRG CONSTRUCTIONS, I would like to enquire about placing an order for your 4-inch / 6-inch solid cement bricks.')}"
+                       target="_blank"
+                       rel="noopener"
+                       class="btn btn-whatsapp">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                        <span>Enquire on WhatsApp</span>
+                    </a>
+                    <a href="#products" class="btn btn-secondary">
+                        <span>View Product Catalogue</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section products-section" id="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">PRODUCT CATALOGUE</span>
+                <h2 class="section-title">Construction Materials & Bricks</h2>
+                <p class="section-subtitle">
+                    Explore our manufactured high-density solid cement bricks and complete range of essential civil building materials supplied directly to your jobsite.
+                </p>
+            </div>
+
+            <!-- Catalogue Category Filter Pills -->
+            <div class="catalogue-filters">
+                <button type="button" class="filter-pill active" onclick="filterCatalogue('all', this)">All Materials (8)</button>
+                <button type="button" class="filter-pill" onclick="filterCatalogue('manufactured', this)">Manufactured by KRG (2)</button>
+                <button type="button" class="filter-pill" onclick="filterCatalogue('supplied', this)">Supplied Materials (6)</button>
+            </div>
+
+            <!-- Group 1: Products Manufactured by KRG -->
+            <div class="catalogue-group" id="groupManufactured">
+                <div class="category-group-header">
+                    <div>
+                        <h3>
+                            <span>Products Manufactured by KRG</span>
+                            <span class="category-tag-badge">100% Solid Cement Bricks</span>
+                        </h3>
+                        <p class="category-group-desc">
+                            Hydraulically pressed under high compaction with controlled vibration. Completely solid body with strictly zero holes, cavities, or perforations.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="manufactured-grid">
+                    <div th:each="product : ${manufacturedProducts}" class="product-card">
+                        <div class="product-media">
+                            <img th:src="@{${product.imageUrl()}}" 
+                                 th:alt="${product.name()} + ' - 100% Solid Dense Cement Brick by KRG CONSTRUCTIONS'" 
+                                 loading="lazy"
+                                 decoding="async"
+                                 width="600"
+                                 height="380">
+                            <span class="product-badge-overlay badge-manufactured" th:text="${product.badge()}">KRG Manufactured</span>
+                        </div>
+
+                        <div class="product-body">
+                            <span class="product-category" th:text="${product.category()}">Manufactured Cement Bricks</span>
+                            <h3 class="product-title" th:text="${product.name()}">Product Name</h3>
+                            <p class="product-desc" th:text="${product.shortDescription()}">Description</p>
+
+                            <div class="product-specs">
+                                <strong>Standard / Specification:</strong>
+                                <span th:text="${product.dimensions()}">Specifications</span>
+                            </div>
+
+                            <ul class="product-features-list">
+                                <li th:each="feature : ${product.keyFeatures()}" th:text="${feature}">Feature point</li>
+                            </ul>
+
+                            <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600; margin-bottom: 1.25rem;">
+                                Best for: <span style="color: var(--text-heading);" th:text="${product.bestFor()}">Applications</span>
+                            </div>
+
+                            <div class="product-footer">
+                                <a th:href="'https://wa.me/' + ${company.whatsappNumber()} + '?text=' + ${#uris.escapeQueryParam(product.whatsappMessage())}"
+                                   target="_blank"
+                                   rel="noopener"
+                                   class="btn-whatsapp-product">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                                    </svg>
+                                    <span>Enquire on WhatsApp</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Group 2: Materials Supplied by KRG -->
+            <div class="catalogue-group" id="groupSupplied">
+                <div class="category-group-header">
+                    <div>
+                        <h3>
+                            <span>Materials Supplied by KRG</span>
+                            <span class="category-tag-badge supplied">Direct Site Delivery</span>
+                        </h3>
+                        <p class="category-group-desc">
+                            Triple-washed sands, granite quarry dust, leading certified cement brands, and machine-crushed blue metal aggregates.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="supplied-grid">
+                    <div th:each="product : ${suppliedProducts}" class="product-card">
+                        <div class="product-media">
+                            <img th:src="@{${product.imageUrl()}}" 
+                                 th:alt="${product.name()} + ' - Construction Material supplied by KRG CONSTRUCTIONS'" 
+                                 loading="lazy"
+                                 decoding="async"
+                                 width="600"
+                                 height="380">
+                            <span class="product-badge-overlay" th:text="${product.badge()}">Supplied</span>
+                        </div>
+
+                        <div class="product-body">
+                            <span class="product-category" th:text="${product.category()}">Category</span>
+                            <h3 class="product-title" th:text="${product.name()}">Product Name</h3>
+                            <p class="product-desc" th:text="${product.shortDescription()}">Description</p>
+
+                            <div class="product-specs">
+                                <strong>Standard / Grade:</strong>
+                                <span th:text="${product.dimensions()}">Specifications</span>
+                            </div>
+
+                            <ul class="product-features-list">
+                                <li th:each="feature : ${product.keyFeatures()}" th:text="${feature}">Feature point</li>
+                            </ul>
+
+                            <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600; margin-bottom: 1.25rem;">
+                                Best for: <span style="color: var(--text-heading);" th:text="${product.bestFor()}">Applications</span>
+                            </div>
+
+                            <div class="product-footer">
+                                <a th:href="'https://wa.me/' + ${company.whatsappNumber()} + '?text=' + ${#uris.escapeQueryParam(product.whatsappMessage())}"
+                                   target="_blank"
+                                   rel="noopener"
+                                   class="btn-whatsapp-product">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                                    </svg>
+                                    <span>Enquire on WhatsApp</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section" id="why-us">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">OUR ADVANTAGES</span>
+                <h2 class="section-title">Why Builders Choose KRG</h2>
+                <p class="section-subtitle">
+                    Combining semi-automatic manufacturing discipline with the personal integrity of a family business since 2010.
+                </p>
+            </div>
+
+            <div class="why-us-grid">
+                <div th:each="item : ${whyChooseUs}" class="why-card">
+                    <div class="why-icon-box">
+                        <svg th:if="${item.iconName() == 'shield-check'}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            <polyline points="9 12 11 14 15 10"></polyline>
+                        </svg>
+                        <svg th:if="${item.iconName() == 'factory'}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M2 20h20M6 20V8l5 4V8l5 4V4h4v16H2z"></path>
+                        </svg>
+                        <svg th:if="${item.iconName() == 'box-heart'}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                        <svg th:if="${item.iconName() == 'truck'}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="1" y="3" width="15" height="13"></rect>
+                            <polygon points="16 8 20 8 23 11 23 16 16 16 8"></polygon>
+                            <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                        </svg>
+                    </div>
+
+                    <h3 class="why-title" th:text="${item.title()}">Title</h3>
+                    <p class="why-desc" th:text="${item.description()}">Description</p>
+                    <span class="why-badge" th:text="${item.highlight()}">Highlight</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================
+         DELIVERY & SERVICE AREAS SECTION
+         ======================================================== -->
+    <section class="section delivery-section" id="delivery">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 3.5rem;">
+                <span class="section-tag" style="color: #FFB38A;">DIRECT TO SITE LOGISTICS</span>
+                <h2 class="section-title">Delivery & Service Areas</h2>
+                <p class="section-subtitle" style="color: #A6ABB8;">
+                    Reliable direct-to-site delivery from our Madagondapalli factory across an approximate 30–35 km radius. Small orders accepted with all delivery charges included in the product price.
+                </p>
+            </div>
+
+            <!-- 3 Core Delivery Highlights -->
+            <div class="delivery-highlights-grid">
+                <div class="delivery-highlight-card">
+                    <div class="delivery-highlight-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                            <path d="M2 12h20"></path>
+                        </svg>
+                    </div>
+                    <div class="delivery-highlight-content">
+                        <h4>Approx. 30–35 km Coverage</h4>
+                        <p>Serving construction sites and residential plots within approximately 30–35 km from our factory in Madagondapalli, Tamil Nadu.</p>
+                    </div>
+                </div>
+
+                <div class="delivery-highlight-card">
+                    <div class="delivery-highlight-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <line x1="12" y1="8" x2="12" y2="16"></line>
+                            <line x1="8" y1="12" x2="16" y2="12"></line>
+                        </svg>
+                    </div>
+                    <div class="delivery-highlight-content">
+                        <h4>Small Orders Accepted</h4>
+                        <p>Whether you require a small top-up load for compound walling or multiple vehicle loads for structural work, every order is welcomed.</p>
+                    </div>
+                </div>
+
+                <div class="delivery-highlight-card">
+                    <div class="delivery-highlight-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            <path d="M9 12l2 2 4-4"></path>
+                        </svg>
+                    </div>
+                    <div class="delivery-highlight-content">
+                        <h4>Delivery Included in Price</h4>
+                        <p>Transparent, hassle-free pricing. All delivery charges within our coverage area are fully included in the product price as informed by the business.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vehicle Fleet Cards (Tractor & Lorry) -->
+            <div class="delivery-grid">
+                <div th:each="vehicle : ${fleet}" class="fleet-card">
+                    <div class="fleet-media">
+                        <img th:src="${vehicle.imageUrl()}" 
+                             th:alt="${vehicle.vehicleType()} + ' - Site Delivery Vehicle by KRG CONSTRUCTIONS Madagondapalli'" 
+                             loading="lazy"
+                             decoding="async"
+                             width="600"
+                             height="380">
+                    </div>
+                    <div class="fleet-body">
+                        <span class="fleet-badge" th:text="${vehicle.capacity()}">Capacity</span>
+                        <h3 class="fleet-title" th:text="${vehicle.vehicleType()}">Vehicle Type</h3>
+                        <p class="fleet-capacity">Ideal for: <span style="color:#FFF;" th:text="${vehicle.idealFor()}">Plots</span></p>
+                        <p class="fleet-desc" th:text="${vehicle.description()}">Vehicle description</p>
+
+                        <ul class="fleet-features">
+                            <li th:each="feat : ${vehicle.features()}" th:text="${feat}">Feature</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Factory Coordinates, Google Maps & WhatsApp Delivery Check Banner -->
+            <div class="coverage-banner">
+                <div class="coverage-info">
+                    <span class="coverage-badge-large">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polygon points="12 8 8 12 12 16 12 8"></polygon>
+                        </svg>
+                        APPROX. 30–35 KM COVERAGE FROM FACTORY
+                    </span>
+                    <h3>Factory Location & Service Area</h3>
+                    <p>
+                        Our manufacturing plant is situated in <strong>Madagondapalli, Tamil Nadu</strong>. We deliver our 4-inch & 6-inch solid cement bricks, sands, cement, and blue metal jelly directly to plots, homes, and project sites within approximately 30–35 km from the factory.
+                    </p>
+
+                    <!-- Factory GPS Coordinates & Google Maps Link -->
+                    <div class="factory-coords-box">
+                        <div>
+                            <span class="coords-label">Factory GPS Coordinates:</span>
+                            <div class="coords-value" th:text="${company.factoryCoordinates()}">12°36'18.5"N 77°44'33.8"E</div>
+                        </div>
+                        <a th:href="${company.googleMapsUrl()}" 
+                           target="_blank" 
+                           rel="noopener" 
+                           class="btn-directions"
+                           aria-label="Get directions to KRG CONSTRUCTIONS factory on Google Maps">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Get Directions on Google Maps</span>
+                        </a>
+                    </div>
+
+                    <p style="font-size: 0.88rem; color: #FFB38A; margin: 0;">
+                        ✓ Delivery charges are included in the product price. Small orders are accepted.
+                    </p>
+                </div>
+
+                <!-- Prominent "Check Delivery Availability" WhatsApp Box -->
+                <div class="coverage-cta-box">
+                    <div>
+                        <span style="display:inline-block; font-size:0.75rem; font-weight:800; text-transform:uppercase; letter-spacing:0.08em; color:var(--whatsapp-green); margin-bottom:0.4rem;">
+                            Direct Dispatch Desk
+                        </span>
+                        <h4>Check Delivery to Your Site</h4>
+                        <p>Share your construction plot location to immediately confirm vehicle access, load availability, and delivery scheduling.</p>
+                    </div>
+
+                    <a th:href="'https://wa.me/' + ${company.whatsappNumber()} + '?text=' + ${#uris.escapeQueryParam(company.deliveryEnquiryMessage())}"
+                       target="_blank"
+                       rel="noopener"
+                       class="btn btn-whatsapp"
+                       style="width: 100%; min-height: 52px; font-size: 1rem;">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                        <span>Check Delivery Availability</span>
+                    </a>
+
+                    <div style="font-size: 0.85rem; color: #8F94A2;">
+                        WhatsApp Number: <span style="color: #FFF; font-weight: 700;">+91 81228 95259</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Quick Quote Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info-wrap">
+                    <span class="section-tag">GET IN TOUCH</span>
+                    <h2>Contact &amp; Customer Enquiry</h2>
+                    <p>
+                        Established in 2010, KRG CONSTRUCTIONS is a family-owned construction materials manufacturer and supplier located in Madagondapalli, Tamil Nadu. Connect with our dispatch team directly via WhatsApp or phone call for immediate price quotes, site availability, and delivery dispatch.
+                    </p>
+
+                    <div class="contact-card-list">
+                        <!-- WhatsApp Enquiry Card -->
+                        <div class="contact-item-card">
+                            <div class="contact-item-icon whatsapp-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-item-details">
+                                <h4>
+                                    <span>WhatsApp Enquiry</span>
+                                    <span class="contact-badge-pill green">Instant Chat</span>
+                                </h4>
+                                <p>Instant chat for quote requests, material photographs, load confirmations, and location drops.</p>
+                                <div style="font-size: 1.05rem; font-weight: 700; color: #128C7E; margin-bottom: 0.5rem;" th:text="${company.whatsappDisplay()}">+91 81228 95259</div>
+                                <div class="contact-card-actions">
+                                    <a th:href="'https://wa.me/' + ${company.whatsappNumber()} + '?text=' + ${#uris.escapeQueryParam(company.deliveryEnquiryMessage())}" 
+                                       target="_blank" 
+                                       rel="noopener" 
+                                       class="btn-whatsapp-action"
+                                       aria-label="Start WhatsApp Chat with KRG CONSTRUCTIONS">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                                        </svg>
+                                        <span>Chat on WhatsApp</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Direct Phone Contact Card (Call Now) -->
+                        <div class="contact-item-card">
+                            <div class="contact-item-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div class="contact-item-details">
+                                <h4>
+                                    <span>Direct Phone Contact</span>
+                                    <span class="contact-badge-pill">Call Desk</span>
+                                </h4>
+                                <p>Call our dispatch desk for direct tractor booking, urgent load scheduling, and order inquiries.</p>
+                                <div style="font-size: 1.05rem; font-weight: 700; color: var(--text-heading); margin-bottom: 0.5rem;" th:text="${company.phoneDisplay()}">+91 97872 67811</div>
+                                <div class="contact-card-actions">
+                                    <a th:href="'tel:' + ${company.phone()}" 
+                                       class="btn-call"
+                                       aria-label="Call KRG CONSTRUCTIONS directly at 9787267811">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                        </svg>
+                                        <span>Call Now: 9787267811</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Location & Google Maps Card -->
+                        <div class="contact-item-card">
+                            <div class="contact-item-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="contact-item-details">
+                                <h4>
+                                    <span>Factory &amp; Manufacturing Yard</span>
+                                    <span class="contact-badge-pill">Tamil Nadu</span>
+                                </h4>
+                                <p style="font-weight: 600; color: var(--text-heading); margin-bottom: 0.2rem;" th:text="${company.fullAddress()}">JP4V+335, Madagondapalli, Tamil Nadu, India.</p>
+                                <p style="font-size: 0.88rem; color: var(--orange-primary); font-weight: 700; font-family: monospace; margin-bottom: 0.5rem;" th:text="'Coordinates: ' + ${company.factoryCoordinates()}">Coordinates: 12°36'18.5"N 77°44'33.8"E</p>
+                                <div class="contact-card-actions">
+                                    <a th:href="${company.googleMapsUrl()}" 
+                                       target="_blank" 
+                                       rel="noopener" 
+                                       class="btn-directions-orange"
+                                       aria-label="Get directions to KRG CONSTRUCTIONS factory on Google Maps">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg>
+                                        <span>Get Directions on Google Maps</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Availability & Ownership Card -->
+                        <div class="contact-item-card">
+                            <div class="contact-item-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                            </div>
+                            <div class="contact-item-details">
+                                <h4>
+                                    <span>Availability &amp; Ownership</span>
+                                    <span class="contact-badge-pill green">Open 24 Hours</span>
+                                </h4>
+                                <p style="margin-bottom: 0.35rem;">
+                                    <strong>Availability:</strong> <span th:text="${company.workingHours()}">Open 24 Hours</span>, as informed by the business.
+                                </p>
+                                <p style="margin-bottom: 0;">
+                                    <strong>Ownership:</strong> <span th:text="${company.ownership()}">Family-Owned Business</span> established in <strong>2010</strong>. Small orders accepted.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Customer Enquiry Form with WhatsApp Integration -->
+                <div class="quote-box">
+                    <span style="display:inline-block; font-size:0.75rem; font-weight:800; text-transform:uppercase; letter-spacing:0.08em; color:var(--orange-primary); margin-bottom:0.4rem;">
+                        Quick Material Quotation
+                    </span>
+                    <h3>Customer Material Enquiry</h3>
+                    <p>
+                        Enter your requirements below to instantly generate a formatted WhatsApp enquiry message to our dispatch desk (+91 81228 95259).
+                    </p>
+
+                    <form id="enquiryForm" onsubmit="sendWhatsAppEnquiry(event)">
+                        <!-- Customer Name & Phone Number -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="customerName">Customer Name <span style="color: var(--orange-primary);">*</span></label>
+                                <input type="text" id="customerName" name="customerName" class="form-control" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="customerPhone">Phone Number <span style="color: var(--orange-primary);">*</span></label>
+                                <input type="tel" id="customerPhone" name="customerPhone" class="form-control" placeholder="e.g. 9787267811" required>
+                            </div>
+                        </div>
+
+                        <!-- Product Selection & Required Quantity -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="materialSelect">Product Selection <span style="color: var(--orange-primary);">*</span></label>
+                                <select id="materialSelect" name="materialSelect" class="form-control" required>
+                                    <optgroup label="Products Manufactured by KRG">
+                                        <option value="4-inch Solid Cement Bricks">4-inch Solid Cement Bricks (100% Solid Body)</option>
+                                        <option value="6-inch Solid Cement Bricks">6-inch Solid Cement Bricks (100% Solid Body)</option>
+                                    </optgroup>
+                                    <optgroup label="Materials Supplied by KRG">
+                                        <option value="P-Sand (Plastering Sand)">P-Sand (Plastering Sand)</option>
+                                        <option value="M-Sand (Concrete Sand)">M-Sand (Concrete Sand)</option>
+                                        <option value="Dust (Stone / Quarry Dust)">Dust (Stone / Quarry Dust)</option>
+                                        <option value="Cement – Sagar, Priya, Ramco & ACC">Cement – Sagar, Priya, Ramco &amp; ACC</option>
+                                        <option value="20 mm Jelly (RCC Coarse Aggregate)">20 mm Jelly (Coarse Aggregate)</option>
+                                        <option value="40 mm Jelly (PCC Coarse Aggregate)">40 mm Jelly (Coarse Aggregate)</option>
+                                        <option value="Multiple Materials (Combined Load)">Multiple Materials (Combined Load)</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="quantityInput">Required Quantity <span style="color: var(--orange-primary);">*</span></label>
+                                <input type="text" id="quantityInput" name="quantityInput" class="form-control" placeholder="e.g. 1500 bricks / 2 units" required>
+                            </div>
+                        </div>
+
+                        <!-- Delivery Location -->
+                        <div class="form-group">
+                            <label class="form-label" for="locationInput">Delivery Location <span style="color: var(--orange-primary);">*</span></label>
+                            <input type="text" id="locationInput" name="locationInput" class="form-control" placeholder="e.g. Site address near Madagondapalli (approx. 30–35 km)" required>
+                        </div>
+
+                        <!-- Additional Message -->
+                        <div class="form-group">
+                            <label class="form-label" for="notesInput">Additional Message / Vehicle Preference</label>
+                            <textarea id="notesInput" name="notesInput" class="form-control" rows="3" placeholder="e.g. Tractor preferred due to narrow road, required by Friday, small order top-up..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-whatsapp" style="width: 100%; padding: 0.95rem; font-size: 1.05rem; min-height: 52px; font-weight: 700;">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                            </svg>
+                            <span>Send Enquiry on WhatsApp</span>
+                        </button>
+
+                        <p style="margin-top: 0.85rem; font-size: 0.82rem; color: var(--text-muted); text-align: center; margin-bottom: 0;">
+                            ✓ Submitting will open WhatsApp with your entered details. You can review and press Send yourself.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="#home" class="brand-link" aria-label="KRG CONSTRUCTIONS Home" style="display: inline-block; margin-bottom: 1.15rem;">
+                        <img src="/images/krg-logo-white.svg" 
+                             alt="KRG CONSTRUCTIONS" 
+                             class="brand-logo-img brand-logo-footer" 
+                             width="360" 
+                             height="64" 
+                             loading="lazy" 
+                             decoding="async">
+                        <span class="sr-only">KRG CONSTRUCTIONS</span>
+                    </a>
+                    <p style="font-size: 0.92rem; line-height: 1.6; margin-bottom: 1.25rem;">
+                        Family-owned construction materials manufacturer and supplier in Madagondapalli since 2010. Precision solid cement bricks, M-Sand, P-Sand, cement, and blue metal jelly delivered to your construction site.
+                    </p>
+                    <span style="display:inline-block; font-size:0.8rem; font-weight:700; color:#FFB38A; background:rgba(217, 83, 30, 0.2); padding:0.35rem 0.85rem; border-radius:9999px;">
+                        Serving Approx. 30–35 km From Madagondapalli Factory
+                    </span>
+                </div>
+
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Our Company</a></li>
+                        <li><a href="#manufacturing">Manufacturing Plant</a></li>
+                        <li><a href="#products">Construction Materials</a></li>
+                        <li><a href="#why-us">Why Choose Us</a></li>
+                        <li><a href="#delivery">Fleet & Delivery</a></li>
+                        <li><a href="#contact">Contact & Enquiry</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Products & Materials</h4>
+                    <ul class="footer-links">
+                        <li><a href="#products">4-inch Solid Cement Bricks</a></li>
+                        <li><a href="#products">6-inch Solid Cement Bricks</a></li>
+                        <li><a href="#products">P-Sand (Plastering Sand)</a></li>
+                        <li><a href="#products">M-Sand (Concrete Sand)</a></li>
+                        <li><a href="#products">Dust (Quarry Dust)</a></li>
+                        <li><a href="#products">Cement – Sagar, Priya, Ramco, ACC</a></li>
+                        <li><a href="#products">20 mm & 40 mm Jelly</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Contact Desk</h4>
+                    <p style="font-size: 0.92rem; margin-bottom: 0.6rem; color:#D3D6DE;">
+                        <strong>Factory Location:</strong> <span th:text="${company.fullAddress()}">JP4V+335, Madagondapalli, Tamil Nadu, India.</span>
+                    </p>
+                    <p style="font-size: 0.92rem; margin-bottom: 0.6rem; color:#D3D6DE;">
+                        <strong>Factory Coordinates:</strong> <span style="font-family: monospace; color: #FFB38A;" th:text="${company.factoryCoordinates()}">12°36'18.5"N 77°44'33.8"E</span>
+                    </p>
+                    <p style="font-size: 0.92rem; margin-bottom: 0.6rem; color:#D3D6DE;">
+                        <strong>Direct Phone:</strong> <a th:href="'tel:' + ${company.phone()}" style="color: #FFB38A; text-decoration: none;" th:text="${company.phoneDisplay()}">+91 97872 67811</a>
+                    </p>
+                    <p style="font-size: 0.92rem; margin-bottom: 0.6rem; color:#D3D6DE;">
+                        <strong>WhatsApp:</strong> <a th:href="'https://wa.me/' + ${company.whatsappNumber()}" target="_blank" rel="noopener" style="color: #25D366; text-decoration: none;" th:text="${company.whatsappDisplay()}">+91 81228 95259</a>
+                    </p>
+                    <p style="font-size: 0.92rem; color:#D3D6DE;">
+                        <strong>Availability:</strong> <span th:text="${company.workingHours()}">Open 24 Hours</span> • <span th:text="${company.ownership()}">Family-Owned Business</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 KRG CONSTRUCTIONS. All rights reserved. Quality construction materials since 2010.</p>
+                <p style="color: #7A7E8A; font-size: 0.82rem;">
+                    Madagondapalli, Tamil Nadu • Delivery charges included in product price
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Action Pill -->
+    <a th:href="'https://wa.me/' + ${company.whatsappNumber()} + '?text=' + ${#uris.escapeQueryParam(company.deliveryEnquiryMessage())}" 
+       target="_blank" 
+       rel="noopener" 
+       class="floating-whatsapp"
+       aria-label="Enquire on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
+        <span>WhatsApp Enquiry</span>
+    </a>
+
+    <!-- Back to Top Smooth Scroll Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to Top" title="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Vanilla Script for Responsive Menu, Catalogue Filtering, Back to Top & Customer WhatsApp Enquiry Form -->
+    <script th:inline="javascript">
+        // Mobile Navigation Toggle & Drawer Controller
+        const mobileToggle = document.getElementById('mobileToggle');
+        const mobileNav = document.getElementById('mobileNav');
+        const mobileOverlay = document.getElementById('mobileOverlay');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        function openMobileMenu() {
+            if (!mobileNav || !mobileToggle) return;
+            mobileToggle.classList.add('is-active');
+            mobileToggle.setAttribute('aria-expanded', 'true');
+            mobileNav.classList.add('open');
+            if (mobileOverlay) mobileOverlay.classList.add('is-visible');
+            document.body.classList.add('menu-open');
+        }
+
+        function closeMobileMenu() {
+            if (!mobileNav || !mobileToggle) return;
+            mobileToggle.classList.remove('is-active');
+            mobileToggle.setAttribute('aria-expanded', 'false');
+            mobileNav.classList.remove('open');
+            if (mobileOverlay) mobileOverlay.classList.remove('is-visible');
+            document.body.classList.remove('menu-open');
+        }
+
+        function toggleMobileMenu() {
+            if (mobileNav && mobileNav.classList.contains('open')) {
+                closeMobileMenu();
+            } else {
+                openMobileMenu();
+            }
+        }
+
+        if (mobileToggle) {
+            mobileToggle.addEventListener('click', toggleMobileMenu);
+        }
+
+        if (mobileOverlay) {
+            mobileOverlay.addEventListener('click', closeMobileMenu);
+        }
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+
+        // Close on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && mobileNav && mobileNav.classList.contains('open')) {
+                closeMobileMenu();
+            }
+        });
+
+        // Close if viewport is widened to desktop size
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 992 && mobileNav && mobileNav.classList.contains('open')) {
+                closeMobileMenu();
+            }
+        });
+
+        // Back to Top Button Controller
+        const backToTopBtn = document.getElementById('backToTop');
+        if (backToTopBtn) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 350) {
+                    backToTopBtn.classList.add('visible');
+                } else {
+                    backToTopBtn.classList.remove('visible');
+                }
+            }, { passive: true });
+
+            backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        // Catalogue Category Filter
+        function filterCatalogue(category, btn) {
+            const groupManufactured = document.getElementById('groupManufactured');
+            const groupSupplied = document.getElementById('groupSupplied');
+            const buttons = document.querySelectorAll('.filter-pill');
+            buttons.forEach(b => b.classList.remove('active'));
+            if (btn) btn.classList.add('active');
+
+            if (category === 'all') {
+                if (groupManufactured) groupManufactured.style.display = 'block';
+                if (groupSupplied) groupSupplied.style.display = 'block';
+            } else if (category === 'manufactured') {
+                if (groupManufactured) groupManufactured.style.display = 'block';
+                if (groupSupplied) groupSupplied.style.display = 'none';
+            } else if (category === 'supplied') {
+                if (groupManufactured) groupManufactured.style.display = 'none';
+                if (groupSupplied) groupSupplied.style.display = 'block';
+            }
+        }
+
+        // Customer Enquiry Form - Client & Server-Validated WhatsApp Submission
+        async function sendWhatsAppEnquiry(e) {
+            e.preventDefault();
+            const nameInput = document.getElementById('customerName');
+            const phoneInput = document.getElementById('customerPhone');
+            const productInput = document.getElementById('materialSelect');
+            const quantityInput = document.getElementById('quantityInput');
+            const locationInput = document.getElementById('locationInput');
+            const notesInput = document.getElementById('notesInput');
+
+            const name = nameInput.value.trim();
+            const phone = phoneInput.value.trim();
+            const product = productInput.value;
+            const quantity = quantityInput.value.trim();
+            const location = locationInput.value.trim();
+            const notes = notesInput ? notesInput.value.trim() : '';
+            const rawPhone = '918122895259';
+
+            // Client-side validation
+            if (!name || name.length < 2) {
+                alert('Please enter your full name.');
+                nameInput.focus();
+                return;
+            }
+            if (!phone || phone.length < 7) {
+                alert('Please enter a valid phone number (e.g. 10 digits).');
+                phoneInput.focus();
+                return;
+            }
+            if (!quantity) {
+                alert('Please specify the required quantity.');
+                quantityInput.focus();
+                return;
+            }
+            if (!location) {
+                alert('Please enter your delivery location.');
+                locationInput.focus();
+                return;
+            }
+
+            // Client-side fallback message
+            let fallbackMessage = `Hello KRG CONSTRUCTIONS,\n\nI would like to enquire about building materials and delivery availability:\n• Customer Name: ${name}\n• Contact Number: ${phone}\n• Product: ${product}\n• Required Quantity: ${quantity}\n• Delivery Location: ${location}`;
+            if (notes) {
+                fallbackMessage += `\n• Additional Message: ${notes}`;
+            }
+            fallbackMessage += `\n\nPlease let me know the price estimate, load availability, and delivery scheduling. Thank you!`;
+
+            try {
+                // Server-side validation endpoint
+                const response = await fetch('/api/enquiry/validate', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        customerName: name,
+                        customerPhone: phone,
+                        materialSelect: product,
+                        quantityInput: quantity,
+                        locationInput: location,
+                        notesInput: notes
+                    })
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    if (data.whatsappUrl) {
+                        window.open(data.whatsappUrl, '_blank');
+                        return;
+                    }
+                }
+            } catch (err) {
+                console.warn('Server validation unavailable, using client fallback', err);
+            }
+
+            // Fallback opening
+            const encoded = encodeURIComponent(fallbackMessage);
+            window.open(`https://wa.me/${rawPhone}?text=${encoded}`, '_blank');
+        }
+    </script>
+</body>
+</html>
