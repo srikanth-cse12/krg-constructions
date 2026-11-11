@@ -214,6 +214,10 @@ The application uses multi-profile configuration architecture:
 | `SPRING_PROFILES_ACTIVE` | `prod` | Active Spring profile (`dev` or `prod`) |
 | `PORT` | `8080` | HTTP listener port |
 | `SERVER_ADDRESS` | `0.0.0.0` | Network binding interface (enables local Wi-Fi mobile testing) |
+| `DATABASE_URL` | *Optional* | Neon PostgreSQL URI (`postgresql://user:pass@ep-xyz.us-east-2.aws.neon.tech/neondb?sslmode=require`) |
+| `SPRING_DATASOURCE_URL` | *Optional* | Standard JDBC URL (`jdbc:postgresql://ep-xyz.us-east-2.aws.neon.tech/neondb?sslmode=require`) |
+| `SPRING_DATASOURCE_USERNAME` | *Optional* | Neon database user name |
+| `SPRING_DATASOURCE_PASSWORD` | *Optional* | Neon database password |
 | `APP_BASE_URL` | *Auto-detected* | Canonical public URL (e.g., `https://krgconstructions.com`) |
 | `APP_HERO_IMAGE` | `/images/hero-cement-brick-machine.jpg` | Overridable hero banner image path |
 | `APP_ABOUT_IMAGE` | `/images/solid-cement-bricks-cured.jpg` | Overridable factory yard image path |
@@ -232,14 +236,16 @@ The application uses multi-profile configuration architecture:
 | `/actuator/health` | `GET` | Production Spring Boot Actuator probe |
 | `/robots.txt` | `GET` | Dynamic robots directives linking to dynamic sitemap |
 | `/sitemap.xml` | `GET` | Dynamic XML sitemap for Google & Bing web crawlers |
-| `/api/enquiry/validate` | `POST` | Server-side validation endpoint for customer enquiry form |
+| `/api/enquiry/submit` | `POST` | Validates, deduplicates, saves enquiry to PostgreSQL, and generates WhatsApp URL |
+| `/api/enquiry/validate` | `POST` | Compatibility endpoint for enquiry validation and persistence |
 | `/error` | `GET`, `POST` | Custom branded error page for 404, 500, and HTTP exceptions |
 
 ---
 
 ## Security & Performance
 
-- **Zero Database Exposure**: Does not store sensitive customer records in an unhardened database; customer inquiries are dispatched directly to WhatsApp.
+- **Persistent Customer Enquiry Storage**: Customer orders and enquiries are validated, deduplicated, and stored securely in PostgreSQL (Neon serverless cloud database in production, or in-memory PostgreSQL-compatible mode during local development).
+- **Zero Public Exposure of Customer Data**: Strictly no public endpoints or unauthenticated dashboards expose customer telephone numbers, names, or site delivery addresses.
 - **HTTP Security Headers**: Injected via `WebSecurityHeadersFilter`:
   - `X-Content-Type-Options: nosniff`
   - `X-Frame-Options: SAMEORIGIN`

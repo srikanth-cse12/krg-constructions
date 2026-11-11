@@ -3440,6 +3440,9 @@
                         Enter your requirements below to instantly generate a formatted WhatsApp enquiry message to our dispatch desk (+91 81228 95259).
                     </p>
 
+                    <!-- Dynamic Alert Message Container for Success / Duplicate / Error -->
+                    <div id="enquiryAlertBox" style="display: none; margin-bottom: 1.25rem; border-radius: 8px; padding: 1rem 1.15rem; font-size: 0.95rem; line-height: 1.5; transition: all 0.3s ease;" role="alert"></div>
+
                     <form id="enquiryForm" onsubmit="sendWhatsAppEnquiry(event)">
                         <!-- Customer Name & Phone Number -->
                         <div class="form-row">
@@ -3491,11 +3494,11 @@
                             <textarea id="notesInput" name="notesInput" class="form-control" rows="3" placeholder="e.g. Tractor preferred due to narrow road, required by Friday, small order top-up..."></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-whatsapp" style="width: 100%; padding: 0.95rem; font-size: 1.05rem; min-height: 52px; font-weight: 700;">
+                        <button type="submit" id="enquirySubmitBtn" class="btn btn-whatsapp" style="width: 100%; padding: 0.95rem; font-size: 1.05rem; min-height: 52px; font-weight: 700;">
                             <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                             </svg>
-                            <span>Send Enquiry on WhatsApp</span>
+                            <span id="enquiryBtnText">Send Enquiry on WhatsApp</span>
                         </button>
 
                         <p style="margin-top: 0.85rem; font-size: 0.82rem; color: var(--text-muted); text-align: center; margin-bottom: 0;">
@@ -3703,9 +3706,12 @@
             }
         }
 
-        // Customer Enquiry Form - Client & Server-Validated WhatsApp Submission
+        // Customer Enquiry Form - Database Persistence & WhatsApp Integration
         async function sendWhatsAppEnquiry(e) {
             e.preventDefault();
+            const alertBox = document.getElementById('enquiryAlertBox');
+            const submitBtn = document.getElementById('enquirySubmitBtn');
+            const btnText = document.getElementById('enquiryBtnText');
             const nameInput = document.getElementById('customerName');
             const phoneInput = document.getElementById('customerPhone');
             const productInput = document.getElementById('materialSelect');
@@ -3721,27 +3727,37 @@
             const notes = notesInput ? notesInput.value.trim() : '';
             const rawPhone = '918122895259';
 
+            // Reset previous alert
+            if (alertBox) {
+                alertBox.style.display = 'none';
+                alertBox.innerHTML = '';
+            }
+
             // Client-side validation
             if (!name || name.length < 2) {
-                alert('Please enter your full name.');
+                showAlert('warning', 'Please enter your full name (minimum 2 characters).');
                 nameInput.focus();
                 return;
             }
             if (!phone || phone.length < 7) {
-                alert('Please enter a valid phone number (e.g. 10 digits).');
+                showAlert('warning', 'Please enter a valid phone number (e.g. 10 digits).');
                 phoneInput.focus();
                 return;
             }
             if (!quantity) {
-                alert('Please specify the required quantity.');
+                showAlert('warning', 'Please specify the required quantity.');
                 quantityInput.focus();
                 return;
             }
             if (!location) {
-                alert('Please enter your delivery location.');
+                showAlert('warning', 'Please enter your delivery location.');
                 locationInput.focus();
                 return;
             }
+
+            // Set loading state on submit button
+            if (submitBtn) submitBtn.disabled = true;
+            if (btnText) btnText.textContent = 'Saving Enquiry...';
 
             // Client-side fallback message
             let fallbackMessage = `Hello KRG CONSTRUCTIONS,\n\nI would like to enquire about building materials and delivery availability:\n• Customer Name: ${name}\n• Contact Number: ${phone}\n• Product: ${product}\n• Required Quantity: ${quantity}\n• Delivery Location: ${location}`;
@@ -3751,8 +3767,8 @@
             fallbackMessage += `\n\nPlease let me know the price estimate, load availability, and delivery scheduling. Thank you!`;
 
             try {
-                // Server-side validation endpoint
-                const response = await fetch('/api/enquiry/validate', {
+                // Submit to backend for validation and database persistence
+                const response = await fetch('/api/enquiry/submit', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
@@ -3765,20 +3781,104 @@
                     })
                 });
 
-                if (response.ok) {
-                    const data = await response.json();
+                const data = await response.json();
+
+                if (response.ok && data.success) {
+                    if (data.duplicate) {
+                        showAlert('info', `
+                            <strong>ℹ️ Recent Enquiry Received:</strong><br>
+                            ${escapeHtml(data.message)}<br>
+                            <div style="margin-top: 0.85rem;">
+                                <a href="${data.whatsappUrl}" target="_blank" class="btn btn-whatsapp" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; padding: 0.65rem 1.25rem; font-size: 0.95rem; font-weight: 700; border-radius: 6px;">
+                                    Open Formatted WhatsApp Message
+                                </a>
+                            </div>
+                        `);
+                    } else {
+                        showAlert('success', `
+                            <strong>✓ Enquiry Saved Successfully! (Reference #${data.enquiryId || 'NEW'})</strong><br>
+                            ${escapeHtml(data.message)}<br>
+                            <div style="margin-top: 0.85rem;">
+                                <a href="${data.whatsappUrl}" target="_blank" class="btn btn-whatsapp" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; padding: 0.65rem 1.25rem; font-size: 0.95rem; font-weight: 700; border-radius: 6px;">
+                                    Open in WhatsApp (+91 81228 95259)
+                                </a>
+                            </div>
+                        `);
+                    }
+
+                    // Open WhatsApp automatically in a new tab
                     if (data.whatsappUrl) {
                         window.open(data.whatsappUrl, '_blank');
-                        return;
                     }
+                    return;
+                } else if (!response.ok && data.errors) {
+                    const errorList = Object.values(data.errors).map(msg => `• ${escapeHtml(msg)}`).join('<br>');
+                    showAlert('danger', `<strong>⚠️ Please correct the following errors:</strong><br>${errorList}`);
+                    return;
+                } else {
+                    showAlert('warning', data.message || 'Could not save enquiry at this moment. You can still reach us directly via WhatsApp.');
                 }
             } catch (err) {
-                console.warn('Server validation unavailable, using client fallback', err);
+                console.warn('Backend unavailable, falling back to direct WhatsApp link', err);
+                showAlert('info', `
+                    <strong>Connecting directly to WhatsApp:</strong><br>
+                    Enquiry saved locally on this session. Proceed to WhatsApp to send your requirement.
+                    <div style="margin-top: 0.85rem;">
+                        <a href="https://wa.me/${rawPhone}?text=${encodeURIComponent(fallbackMessage)}" target="_blank" class="btn btn-whatsapp" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; padding: 0.65rem 1.25rem; font-size: 0.95rem; font-weight: 700; border-radius: 6px;">
+                            Open in WhatsApp
+                        </a>
+                    </div>
+                `);
+                window.open(`https://wa.me/${rawPhone}?text=${encodeURIComponent(fallbackMessage)}`, '_blank');
+            } finally {
+                if (submitBtn) submitBtn.disabled = false;
+                if (btnText) btnText.textContent = 'Send Enquiry on WhatsApp';
+            }
+        }
+
+        function showAlert(type, htmlContent) {
+            const alertBox = document.getElementById('enquiryAlertBox');
+            if (!alertBox) return;
+
+            let borderColor = '#D9531E';
+            let bgColor = 'rgba(217, 83, 30, 0.08)';
+            let textColor = '#2B2D42';
+
+            if (type === 'success') {
+                borderColor = '#10B981';
+                bgColor = 'rgba(16, 185, 129, 0.09)';
+                textColor = '#065F46';
+            } else if (type === 'danger') {
+                borderColor = '#EF4444';
+                bgColor = 'rgba(239, 68, 68, 0.09)';
+                textColor = '#991B1B';
+            } else if (type === 'info') {
+                borderColor = '#3B82F6';
+                bgColor = 'rgba(59, 130, 246, 0.09)';
+                textColor = '#1E40AF';
+            } else if (type === 'warning') {
+                borderColor = '#F59E0B';
+                bgColor = 'rgba(245, 158, 11, 0.09)';
+                textColor = '#92400E';
             }
 
-            // Fallback opening
-            const encoded = encodeURIComponent(fallbackMessage);
-            window.open(`https://wa.me/${rawPhone}?text=${encoded}`, '_blank');
+            alertBox.style.border = `1.5px solid ${borderColor}`;
+            alertBox.style.backgroundColor = bgColor;
+            alertBox.style.color = textColor;
+            alertBox.innerHTML = htmlContent;
+            alertBox.style.display = 'block';
+
+            alertBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        function escapeHtml(text) {
+            if (!text) return '';
+            return text
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
         }
     </script>
 </body>

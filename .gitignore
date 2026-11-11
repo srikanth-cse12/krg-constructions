@@ -27,6 +27,7 @@ logs/
 *.tmp
 *.bak
 *.swp
+*.swo
 *~
 
 ### OS Generated Files ###
@@ -36,6 +37,11 @@ desktop.ini
 $RECYCLE.BIN/
 ehthumbs.db
 
+### Local Database Files (H2 / Embedded Databases) ###
+*.mv.db
+*.trace.db
+*.db
+
 ### IDE & Editor Files ###
 # IntelliJ IDEA
 .idea/
@@ -43,11 +49,14 @@ ehthumbs.db
 *.iws
 *.ipr
 out/
+.idea_modules/
 
 # Visual Studio Code
 .vscode/
+*.code-workspace
+.history/
 
-# Eclipse
+# Eclipse & Spring Tool Suite (STS)
 .apt_generated
 .classpath
 .factorypath
@@ -55,14 +64,22 @@ out/
 .settings/
 .springBeans
 .sts4-cache/
+bin/
+.metadata/
 
 # NetBeans
 nbproject/private/
 nbbuild/
 dist/
 
+# Other Editors (Sublime, Vim)
+*.sublime-workspace
+*.sublime-project
+
 ### Local Environment & Secrets ###
 .env
+.env.*
+!.env.example
 *.env
 *.local
 local.properties
@@ -74,4 +91,3 @@ application-local.yml
 *.jks
 *.keystore
 secrets/
-

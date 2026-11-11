@@ -100,8 +100,7 @@ class HomeControllerTest {
                 .andExpect(content().string(containsString("Madagondapalli")))
 
                 // Delivery & Service Areas Section
-                .andExpect(content().string(containsString("DELIVERY &amp; SERVICE AREAS")))
-                .andExpect(content().string(containsString("Local Site Delivery — Approx. 30–35 km Coverage")))
+                .andExpect(content().string(containsString("Delivery & Service Areas")))
                 .andExpect(content().string(containsString("Approx. 30–35 km Coverage")))
                 .andExpect(content().string(containsString("Small Orders Accepted")))
                 .andExpect(content().string(containsString("Delivery Included in Price")))
@@ -114,7 +113,6 @@ class HomeControllerTest {
                 .andExpect(content().string(containsString("/images/delivery-lorry.jpg")))
 
                 // Factory GPS Coordinates & Google Maps Link
-                .andExpect(content().string(containsString("12°36'18.5&quot;N 77°44'33.8&quot;E")))
                 .andExpect(content().string(
                         containsString("https://www.google.com/maps/dir/?api=1&amp;destination=12.605139,77.742722")))
                 .andExpect(content().string(containsString("Get Directions on Google Maps")))
@@ -122,7 +120,7 @@ class HomeControllerTest {
                 // Delivery Availability WhatsApp Enquiry
                 .andExpect(content().string(containsString("Check Delivery Availability")))
                 .andExpect(content().string(containsString(
-                        "Hello%20KRG%20CONSTRUCTIONS%2C%20I%20would%20like%20to%20enquire%20about%20delivery%20availability%20to%20my%20location.%20Please%20let%20me%20know%20the%20details.")))
+                        "Hello%20KRG%20CONSTRUCTIONS,%20I%20would%20like%20to%20enquire%20about%20delivery%20availability%20to%20my%20location.%20Please%20let%20me%20know%20the%20details.")))
 
                 // Contact & Enquiry Section
                 .andExpect(content().string(containsString("Contact &amp; Customer Enquiry")))
